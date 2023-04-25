@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Catamaran:wght@100&family=PT+Sans+Narrow:wght@700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Lilita+One&family=Nunito+Sans:wght@200;300;400;600&family=Teko:wght@400;500&display=swap');
+.photo{
+    width: 30%;
+    border-radius: 50%;
+    margin: 5%;
+}
+.sidebar{
+    padding: 0;
+}
+.author{
+    text-align: center;
+    margin: 0% 0%;
+    background-color:  rgb(255, 255, 255);
+    margin: 7%;
+}
+.author .sidebarTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    font-weight: bolder;
+
+    color: rgba(184, 44, 16, 0.8);
+    margin: 5%;
+}
+
+.author .name{
+    font-family: 'Teko', sans-serif;
+    font-size: xx-large;
+    color: black;
+    font-weight: 100;
+    
+}
+
+.author span.words{
+    color: rgb(85, 79, 79);
+    font-family: 'Catamaran', sans-serif;
+    font-size: normal;
+    font-weight:bold;
+    margin: 5%;
+    
+}
+.card{
+    min-height: 300px;
+    margin: 5%;
+    padding: 1%;
+    text-align: center;
+}
+.cardTitle{
+    min-height: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(184, 44, 16, 0.8);
+}
+.shrink img {
+    transition: 0.7s ease;
+    filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+    }
+    
+    .shrink img:hover{
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 0.7s ease;
+    }
+.photography{
+    margin: 3%;
+    width:90%;
+    height: auto;
+}

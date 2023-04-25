@@ -1,0 +1,19 @@
+.cont{
+    display: flex;
+}
+.left{
+  flex-shrink: 0;
+  flex-basis: 70%;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .cont {
+        /* it place the items in vertical direction */
+      flex-direction: column;
+    }
+  
+    .box2 {
+      margin: 0 0 1rem;
+    }
+  }
