@@ -1,0 +1,40 @@
+.single {
+   width: 100%;
+   height: auto; /* set the height of the container */
+   
+   text-align: center;
+ }
+ 
+.postIm{
+width: 100%;
+padding: 5%;
+padding-top: 3%;
+padding-bottom: 3%;
+ }
+ .single .postContent{
+   margin: 1.5% 5% 2% 5%;
+   text-align: left;
+ }
+ .postDetails{
+   font-family:  'Ubuntu',sans-serif;
+    text-align: center;
+    color: rgba(184, 44, 16, 0.8);
+   font-weight: bolder;
+   margin: 0%;
+   margin-top: 1%;
+   }
+   h5 + h5{
+      margin-top: -0.1%;
+   }
+   .postContent{
+      font-family: 'Varela round', sans-serif;
+      line-height: 180%;
+      font-size: large;
+      
+   }
+
+   .postContent::first-letter{
+      margin-left: 6%;
+      font-size: xx-large;
+      
+   }

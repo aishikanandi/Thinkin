@@ -46,11 +46,11 @@ nav.primary-navigation ul li {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
 }
-nav.primary-navigation li a {
+nav.primary-navigation li  {
   color:black;
   font-weight: bolder;
 }
-nav.primary-navigation li a:hover {
+nav.primary-navigation li:hover {
   color: white;
 }
 nav.primary-navigation li:hover {
@@ -87,16 +87,16 @@ nav.primary-navigation ul li ul li {
   margin-bottom: 20px;
   border-style: none;
 }
-nav.primary-navigation ul li ul li a:hover {
+nav.primary-navigation ul li ul li :hover {
   padding-left: 10px;
   transition: all 0.3s ease;
 }
 
-a {
+li {
   text-decoration: none;
 }
 
-ul li ul li a {
+ul li ul li {
   transition: all 0.5s ease;
 }
 
@@ -133,13 +133,12 @@ ul li ul li a {
   nav.primary-navigation ul li {
     border-left: 0px;
   } 
-}
+}a
 
-.Link .header{
+.primary-navigation ul li{
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
-
-.Link .header:hover{
+.primary-navigation ul li:hover{
   color: white;
 }
