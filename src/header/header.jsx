@@ -25,19 +25,19 @@ export default function header() {
       <div className='Navigation'>
       <nav role="navigation" class="primary-navigation">
         <ul>
-          <li><a href="#"><Link to="/technology" className='Link header'>Technology</Link></a></li>
-          <li><a href="#"><Link to="/business" className='Link header'>Business <span>&#9660;</span></Link></a>
+          <li><Link to="/technology" className='Link header' style={{color: 'black'}}>Technology</Link></li>
+          <li><Link to="/business" className='Link header' style={{color: 'black'}}>Business <span>&#9660;</span></Link>
             <ul class="dropdown">
-              <li><a href="#"><Link to="/marketing" className='Link header'>Marketing</Link></a></li>
-              <li><a href="#"><Link to="/hr" className='Link header'>Human Resource</Link></a></li>
-              <li><a href="#"><Link to="/operations" className='Link header'>Operations</Link></a></li>
-              <li><a href="#"><Link to="/strategy" className='Link header'>Strategy</Link></a></li>
-              <li><a href="#"><Link to="/finance" className='Link header'>Finance</Link></a></li>
+              <li><Link to="/marketing" className='Link header' style={{color: 'black'}}>Marketing</Link></li>
+              <li><Link to="/hr" className='Link header' style={{color: 'black'}}>Human Resource</Link></li>
+              <li><Link to="/operations" className='Link header' style={{color: 'black'}}>Operations</Link></li>
+              <li><Link to="/strategy" className='Link header' style={{color: 'black'}}>Strategy</Link></li>
+              <li><Link to="/finance" className='Link header' style={{color: 'black'}}>Finance</Link></li>
             </ul>
           </li>
-          <li><a href="#"><Link to="/economy" className='Link header'>Economy</Link></a></li>
-          <li><a href="#"><Link to="/leadership" className='Link header'>Leadership</Link></a></li>
-          <li><a href="#"><Link to="/moral-philosophy" className='Link header'>Moral Philosophy</Link></a></li>
+          <li><Link to="/economy" className='Link header' style={{color: 'black'}}>Economy</Link></li>
+          <li><Link to="/leadership" className='Link header' style={{color: 'black'}}>Leadership</Link></li>
+          <li><Link to="/moral-philosophy" className='Link header' style={{color: 'black'}}>Moral Philosophy</Link></li>
         </ul>
       </nav>
       </div>

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Catamaran:wght@100&family=Noto+Sans+SC:wght@700&family=PT+Sans+Narrow:wght@700&family=Pacifico&family=Ubuntu:wght@500&family=Varela+Round&display=swap');
+.pagePosts{
+    margin: 2%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.noPosts{
+    min-height: 450px;
+}
+ 
+.textNoPage{
+    padding-left: 31%;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 2em;
+    color:brown;
+} 
+.gif{
+    margin-left: 22%;
+}
