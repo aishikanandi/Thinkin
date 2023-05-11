@@ -2,6 +2,7 @@ import Carousel from  '../../Carousel/carousel.jsx'
 import Sidebar from '../../sidebar/sidebar.jsx';
 import Header from '../../header/header.jsx';
 
+
 import './home.css';
 export default function home() {
   return (
@@ -9,7 +10,7 @@ export default function home() {
     <Header/>
     <div className='cont'>
       <div className='left'>
-        <Carousel className='box2 '/>
+        <Carousel className='box2'/>
 
       </div>
     <div className='right'>

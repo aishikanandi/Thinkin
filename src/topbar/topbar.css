@@ -41,7 +41,7 @@ nav.primary-navigation1 {
     font-family: arvo;
     padding-right: 30px;
   }
-  nav.primary-navigation1 li a {
+  nav.primary-navigation1 li {
     color:black;
    
     font-family: 'Nunito Sans', sans-serif;
@@ -49,6 +49,7 @@ nav.primary-navigation1 {
   }
   nav.primary-navigation1 li:hover {
     cursor: pointer;
+    
   }
   nav.primary-navigation1 ul li ul {
     visibility: hidden;
@@ -86,7 +87,7 @@ nav.primary-navigation1 {
     text-decoration: none;
   }
   a:hover {
-    color: rgba(184, 44, 16, 0.8);
+    color:black;
   }
   
   ul li a {

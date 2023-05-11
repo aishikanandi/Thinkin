@@ -1,12 +1,13 @@
 .carousel1{
   
-    padding: 1% 5.5% 3% 5.5%;
+    padding: 1% 2% 3% 5.5%;
     z-index: 1;
 }
 @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Bebas+Neue&family=Lilita+One&family=Nunito+Sans:wght@200;300;400;600&family=Teko:wght@400;500&display=swap');
 
 #Carousel{
-    margin: 1% 1%;
+    margin: 1% 0 1% 1%;
+    
   }
   
   .item {
@@ -24,17 +25,31 @@ position: absolute;
   content: '';
   }
   .carousel-caption h5{
-    font-size: 180%;
+    font-size: 210%;
     color: rgb(24, 21, 21);
     text-align: center;
     font-family: 'Catamaran', sans-serif;
     font-weight: bold;
     line-height: 160%;
     cursor: pointer;
+    margin-bottom: 0%;
+  }
+  .ccaption{
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 130%;
+    color: rgb(113, 108, 108);
+    margin-top: 0%;
   }
   .item img {
+    width: 100%;
     height: 100%!important;
     margin: 0;
+    
   }
   
   .carousel-control {
@@ -83,6 +98,7 @@ position: absolute;
     cursor: pointer;
     position: relative;
     height: 0;
+    
     padding-bottom: 50%;
     margin: 2% 6% 6% 0%;
     --offset-multiplier: 4px;
@@ -94,11 +110,13 @@ position: absolute;
   .articles {
     display: flex;
     flex-wrap: wrap;
+    
   }
   
   .card4articles {
     flex: 1 1 40%; /* initially 3 columns */
     box-sizing: border-box;
+    
   }
   
   @media only screen and (max-width: 768px) {
@@ -125,7 +143,7 @@ position: absolute;
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 0 16px;
+    padding: 3% ;
     box-sizing: border-box;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(255, 255, 255, 0.8);
     border-radius: 6px;
@@ -133,6 +151,10 @@ position: absolute;
     --translate: calc(var(--offset) * var(--offset-multiplier));
     transform: translate(var(--translate), var(--translate));
     z-index: 5;
+  }
+  .economy{
+    background-image: url('../../public/economy.jpeg');
+    background-size: cover;
   }
   .tech{
     background-image: url('../../public/technology.jpg');
@@ -149,6 +171,7 @@ position: absolute;
   .philosophy{
     background-image: url('../../public/philosophy.jpg');
     background-size: cover;
+    width: 50%;
   }
   .childArticle:nth-child(1) {
     --offset: 0;

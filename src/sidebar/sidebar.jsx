@@ -32,13 +32,16 @@ export default function sidebar() {
                 
                 <div className='gallery'>
                     <div className='shrink'>
-                        <img className='photography' src="1.jpeg" alt="" />
+                        <img className='photography' src="p3.jpeg" alt="" />
                     </div>
                     <div className='shrink'>
-                        <img className='photography' src="2.jpg" alt="" />
+                        <img className='photography' src="p4.jpeg" alt="" />
                     </div>
                     <div className='shrink'>
-                        <img className='photography' src="3.jpg" alt="" />
+                        <img className='photography' src="p1.jpeg" alt="" />
+                    </div>
+                    <div className='shrink'>
+                        <img className='photography' src="p2.jpeg" alt="" />
                     </div>
                 </div>
             </div>
