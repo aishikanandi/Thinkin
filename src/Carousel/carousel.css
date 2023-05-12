@@ -128,6 +128,59 @@ position: absolute;
   @media only screen and (max-width: 480px) {
     .item {
       flex-basis: 100%; /* 1 column on even smaller screens */
+      
+    }
+    .carousel-inner{
+      padding-bottom: 18%;
+    }
+    .recentBlog h5{
+      font-size: 180%;
+    }
+    .cate h5{
+      font-family: 'Bebas Neue', cursive;
+      font-size: 180%;
+      margin-top: 7%;
+      margin-bottom: 1%;
+    }
+    
+    .carousel-caption h5 {
+      font-size: small;
+      margin-top: 0%;
+      position: relative;
+      top: 74px;
+    }
+    .card4articles {
+      flex: 1 1 100%; /* initially 3 columns */
+      box-sizing: border-box;
+      
+    }
+    .carousel-caption h6{
+      font-size: small;
+      margin-bottom: 0%;
+      position: relative;
+      top: 70px;
+      color: rgba(173, 170, 170, 1);
+      line-height: 120%;
+    }
+    .d-md-block{
+      padding: 0%;
+    }
+    .carousel-indicators{
+      visibility: hidden;
+    }
+    .childArticle h2{
+      font-size: 120% !important;
+      color: rgb(61, 60, 60);
+      margin-top: 4%;
+    }
+    .philosophy{
+      width: 100% !important;
+    }
+    .tech{
+      background-image: url('../../public/technologys.jpg') !important;
+    }
+    .leadership{
+      background-image: url('../../public/leaderships.jpg') !important;
     }
   }
 
@@ -214,6 +267,7 @@ position: absolute;
     overflow: hidden;
     text-overflow: ellipsis;
     font-weight: bold;
+
     
   }
 

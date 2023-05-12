@@ -6,6 +6,7 @@ function HR() {
   return (
     <div className='hrPage'>
       <Header/>
+
         <div className="pagePosts noPosts">
           <p class="textNoPage">I'm still THINKIN! Come back later!</p>
              <br></br>

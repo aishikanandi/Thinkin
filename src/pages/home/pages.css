@@ -15,7 +15,44 @@
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 2em;
     color:brown;
+
 } 
+h5.pageTitle{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 250%;
+    font-weight: bolder;
+    color: rgba(184, 44, 16, 0.8);
+    text-align: center;
+    margin-top: 3%;
+}
 .gif{
     margin-left: 22%;
+}
+@media only screen and (max-width: 480px) {
+    .noPosts{
+        min-height: 550px;
+    }
+     
+    .textNoPage{
+        margin: 20% 10% 0% 10%;
+padding-left: 0% !important;
+        font-family: 'Noto Sans SC', sans-serif;
+        font-size: large;
+        color:brown;
+        height: 10% !important;
+    } 
+    .gif{
+        position: relative;
+        top: -50px;
+        margin-left: 15%;
+        width: 80%;
+    } 
+    .pageTitle{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 180%;
+        font-weight: bolder;
+        color: rgba(184, 44, 16, 0.8);
+        margin: auto;
+        margin-top: 3%;
+    }
 }

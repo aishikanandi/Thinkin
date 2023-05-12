@@ -5,7 +5,7 @@ function single(s) {
   return (
     <div className='single'>
         <img className='postIm' src={s.imageUrl} alt="" />
-        <h1>{s.title}</h1>
+        <h1 className="Title">{s.title}</h1>
         <div className="postDetails">
         <h5 className="postAuthor">Author : Ayush Kumar Nandi </h5>
         <h5 className="postTime">1 hour ago </h5>

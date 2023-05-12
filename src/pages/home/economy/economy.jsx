@@ -8,6 +8,7 @@ function economy() {
   return (
     <div className='businessPage'>
         <Header/>
+        <h5 className="pageTitle">Economy</h5>
         <div className="pagePosts">
         <Link to="/eco1" className='postLink'><Post imageUrl="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/upi-sixteen_nine.jpg" category="Economy" title="UPI - Unified Payment Interface"
         content="“Bhaiya ji ye kya, 3 rupay change nahi hai kya? Aap humesha candy de dete ho” :(

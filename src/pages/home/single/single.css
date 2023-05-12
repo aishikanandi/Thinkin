@@ -38,3 +38,22 @@ padding-bottom: 3%;
       font-size: xx-large;
       
    }
+   @media only screen and (max-width: 480px) {
+      .postIm{
+         width: 100%;
+         padding: 4%;
+         padding-top: 5%;
+         padding-bottom: 3%;
+          }
+          .postContent{
+            font-family: 'Varela round', sans-serif;
+            line-height: 180%;
+            font-size: small;
+            
+         }.postDetails{
+            font-size: small;
+         }
+         h1.Title{
+            font-size: 180%;
+         }
+   }

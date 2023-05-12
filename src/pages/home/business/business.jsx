@@ -1,14 +1,17 @@
 import '../pages.css'
 // import TopBar from '../topbar/Topbar.jsx';
 // import Footer from '../../src/footer/footer.jsx';
+import {Link} from 'react-router-dom'
 import Header from '../../../header/header.jsx';
 import Post from '../../../post/post.jsx';
 function business() {
   return (
     <div className='businessPage'>
         <Header/>
+        <h5 className="pageTitle">Business</h5>
         <div className="pagePosts">
-          <Post imageUrl="https://www.marketing91.com/wp-content/uploads/2022/09/Criticism-of-the-AIDA-model-1024x585.jpg"
+          
+        <Link to="/mark1" className='postLink'><Post imageUrl="https://www.marketing91.com/wp-content/uploads/2022/09/Criticism-of-the-AIDA-model-1024x585.jpg"
           title="AIDA Model" category="Marketing"
           content="Narrative – Folks! This is something you need to read. 
 
@@ -28,8 +31,8 @@ function business() {
           
           Incite: Motivated, encouraged (Remember as Excited inside which makes you motivated)
           
-          Flyer: Handout, Leaflet, pamphlets (Remember: Children make paper planes out of pamphlets and enjoy flying them around.)"/>
-          <Post 
+          Flyer: Handout, Leaflet, pamphlets (Remember: Children make paper planes out of pamphlets and enjoy flying them around.)"/></Link>
+          <Link to="/mark2" className='postLink'><Post 
           imageUrl="https://static.wixstatic.com/media/856e46_7d8c71ef767b45f68cc08d95695a0439~mv2.jpg/v1/fill/w_640,h_550,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/856e46_7d8c71ef767b45f68cc08d95695a0439~mv2.jpg"
           title="Holistic Marketing" 
           category="Marketing"
@@ -48,8 +51,8 @@ function business() {
           Additional words you might want to know
           Strife: Conflict
           Endeavor: Try (Remember as: End - Never)
-          Elevate: Rise (Remember: Elevator takes a person higher)"/>
-          <Post imageUrl="https://pwpblog.wpengine.com/wp-content/uploads/2022/08/D2C-Ecommerce.png" category="marketing" title="D2C: Direct-To-Consumers" 
+          Elevate: Rise (Remember: Elevator takes a person higher)"/></Link>
+          <Link to="/mark3" className='postLink'><Post imageUrl="https://pwpblog.wpengine.com/wp-content/uploads/2022/08/D2C-Ecommerce.png" category="marketing" title="D2C: Direct-To-Consumers" 
           content="This morning I stumbled upon couple of interesting plots. One thought that fascinated me to write on was, how Direct-To-Consumers (D2C) business model has been hitting the trends post-pandemic.
  
           D2C has grown by the prophesied growth rate i.e., by 20% in 2021. It is also speculated that India’s D2C market is likely to reach an expansion of approximately $100 billion by 2025 observing its exponential growth in the past few years.
@@ -63,7 +66,7 @@ function business() {
           The success of a D2C business model can be observed when your stats speak that 50-60% of consumers would be willing to share more information with your brands to allow them to have a better shopping experience. Total control over the data that brands gather is another important facet.
            
           I was glad to share my opinion with the readers. Would like this forum to be open for some discussions on, that can we safely assume, since D2C is trending, hence bigger brands be looking to position more on D2C models. Or else it was just the pandemic that brought people more to the online platform, and with time D2C will be an apart of the same usual crowd of business models?
-          " />
+          " /></Link>
         </div>
     </div>
   )

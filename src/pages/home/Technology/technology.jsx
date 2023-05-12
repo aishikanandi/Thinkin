@@ -8,6 +8,7 @@ function technology() {
   return (
     <div className='tPage'>
       <Header/>
+      <h5 className="pageTitle">Technology</h5>
         <div className="pagePosts">
         <Link to="/tech1" className='postLink'><Post 
             imageUrl="https://redriver.com/wp-content/uploads/2021/10/Zero-trust-Security-Model.jpg" category="Technology" title="Zero Trust"

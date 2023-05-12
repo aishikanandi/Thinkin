@@ -119,7 +119,7 @@ Explanation - Folks! The below might help you in your note-making.</h6>
   <div class="card4articles" style={{ '--cards': '1' }}>
   <Link to="/moral-philosophy" className='Link'><div class="childArticle philosophy">
       <h2>Moral Philosophy</h2>
-      <p>1 articles</p>
+      <p>1 article</p>
     </div></Link>
   </div>
   </div>

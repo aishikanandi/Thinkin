@@ -8,3 +8,14 @@
     font-weight: bold;
 }
 
+.notVisible{
+    color: rgba(184, 44, 16, 0.8);
+    font-size: 0;
+}
+@media only screen and (max-width: 480px) {
+    .credits{
+        padding-top: 4%;
+        margin-bottom: 0;
+        font-size: small;
+    }
+}

@@ -4,7 +4,7 @@ export default function footer() {
   return (
     <div className='credits'>
       <p>Developed by Aishika Nandi &copy; 2023 </p>
-      <p>learn react</p>
+      <p className="notVisible">learn react</p>
     </div>
   )
 }

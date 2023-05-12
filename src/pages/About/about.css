@@ -1,8 +1,19 @@
 .aboutContent{
-    margin: 4% 6%;
+    margin: 3% 6%;
 }
 .writingGif{
     width: 35%;
     margin-left: 30%;
     margin-top: 0%;
+}
+@media only screen and (max-width: 480px) {
+    .aboutContent{
+        margin: 5% 7%;
+        font-size: small !important;
+    }
+    .writingGif{
+        width: 60%;
+        margin-left: 21%;
+        margin-top: 0%;
+    }
 }

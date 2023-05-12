@@ -74,3 +74,35 @@
     width:80%;
     height:auto;
 }
+@media only screen and (max-width: 480px) {
+    .shrink img {
+        filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+        }
+    .shrink img:hover{
+        filter: grayscale(100%);
+    }
+    .photo{
+        margin-top: 4%;
+    }
+    .photography{
+        margin: 3% 2% 3% 1%;
+        width:100%;
+        height:auto;
+        
+    }
+.author{
+margin: 3%;
+font-size: 80%;
+margin-bottom: 7%;
+}
+    .cardTitle{
+        font-size: 200%;
+        margin-top: 12%;
+        margin-bottom: 0%;
+    }
+    div .card{
+        margin-top: 2%;
+    }
+}

@@ -8,6 +8,7 @@ function business() {
   return (
     <div className='businessPage'>
         <Header/>
+        <h5 className="pageTitle">Marketing</h5>
         <div className="pagePosts">
         <Link to="/mark1" className='postLink'><Post imageUrl="https://www.marketing91.com/wp-content/uploads/2022/09/Criticism-of-the-AIDA-model-1024x585.jpg"
           title="AIDA Model" category="Marketing"
