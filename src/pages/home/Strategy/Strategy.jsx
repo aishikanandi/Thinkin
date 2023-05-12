@@ -1,7 +1,6 @@
 import React from 'react'
 import '../pages.css'
 import Header from '../../../header/header.jsx';
-import Post from '../../../post/post.jsx';
 function Strategy() {
   return (
     <div className='strategyPage'>
