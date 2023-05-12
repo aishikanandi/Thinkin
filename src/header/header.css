@@ -114,7 +114,12 @@ ul li ul li {
     display: flex;
     flex-wrap: wrap;
   }
-  
+  .Type-writer{
+    padding-bottom: 7%;
+  }
+  .logo{
+    padding-top: 6%;
+  }
   .primary-navigation ul {
     display: flex;
     flex-wrap: wrap;
@@ -144,4 +149,9 @@ ul li ul li {
 }
 .primary-navigation ul li:hover{
   color: white;
+}
+@media only screen and (max-width: 480px) {
+  .Navigation{
+    display: none;
+  }
 }

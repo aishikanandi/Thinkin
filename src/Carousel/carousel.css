@@ -130,6 +130,9 @@ position: absolute;
       flex-basis: 100%; /* 1 column on even smaller screens */
       
     }
+    .carousel1{
+      padding-top: 3%;
+    }
     .carousel-inner{
       padding-bottom: 18%;
     }

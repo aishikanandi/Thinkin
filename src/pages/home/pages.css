@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Catamaran:wght@100&family=Noto+Sans+SC:wght@700&family=PT+Sans+Narrow:wght@700&family=Pacifico&family=Ubuntu:wght@500&family=Varela+Round&display=swap');
 .pagePosts{
     margin: 2%;
-    margin-top: 3%;
+    margin-top: 2%!important;
     display: flex;
     flex-wrap: wrap;
 }
@@ -9,12 +9,14 @@
 .noPosts{
     min-height: 450px;
 }
- 
-.textNoPage{
-    padding-left: 31%;
+.divider{
+visibility: hidden;
+}
+h5.textNoPage{
+    margin: auto !important;
     font-family: 'Noto Sans SC', sans-serif;
-    font-size: 2em;
-    color:brown;
+    font-size: x-large;
+    color:rgba(184, 44, 16, 0.8);
 
 } 
 h5.pageTitle{
@@ -23,10 +25,15 @@ h5.pageTitle{
     font-weight: bolder;
     color: rgba(184, 44, 16, 0.8);
     text-align: center;
-    margin-top: 3%;
+    margin: auto !important;
+    padding-top: 4%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    margin-top: 0% !important;
 }
 .gif{
     margin-left: 22%;
+    margin-right: 50%;
 }
 @media only screen and (max-width: 480px) {
     .noPosts{
@@ -47,12 +54,20 @@ padding-left: 0% !important;
         margin-left: 15%;
         width: 80%;
     } 
-    .pageTitle{
+    h5.pageTitle{
         font-family: 'Bebas Neue', cursive;
         font-size: 180%;
         font-weight: bolder;
         color: rgba(184, 44, 16, 0.8);
+        margin: auto !important;
+        margin-top: 3% !important;
+    }
+    .divider{
+        visibility: visible;
         margin: auto;
-        margin-top: 3%;
+        width: 80%;
+        border-style: dashed ;
+        color: rgb(153, 147, 147);
+        border-width: 0.1em;
     }
 }

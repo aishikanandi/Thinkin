@@ -5,10 +5,11 @@ function moralphilosophy() {
   return (
     <div className='mpPage'>
       <Header/>
-        <div className="pagePosts noPosts">
-          <p class="textNoPage">I'm still THINKIN! Come back later!</p>
-             <br></br>
+      <div className="pagePosts noPosts">
+        <h5 className="pageTitle">Moral Philosophy</h5>
+         <br />
           <img class="gif" src="75WF.gif" alt="" />
+          <h5 className="textNoPage">I'm still THINKIN! Come back later!</h5>
         </div>
     </div>
   )

@@ -6,9 +6,10 @@ function Operations() {
     <div className='oPage'>
       <Header/>
         <div className="pagePosts noPosts">
-          <p class="textNoPage">I'm still THINKIN! Come back later!</p>
-             <br></br>
+        <h5 className="pageTitle">Operations</h5>
+         <br />
           <img class="gif" src="75WF.gif" alt="" />
+          <h5 className="textNoPage">I'm still THINKIN! Come back later!</h5>
         </div>
     </div>
   )

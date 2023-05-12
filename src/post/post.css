@@ -76,12 +76,19 @@
 @media only screen and (max-width: 480px) {
     .post{
         width: 95%;
-        margin: 0% 2% 0% 4%;
-        border: none;
-        padding: 0%;
+        margin: 2% 2% 0% 4%;
+        border-style: none ;
+        padding: 0% 2% 2% 2%;
         
     }
     .postLink{
         margin-left: 0%;
     }
+    .post:hover{
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        transform: scale(1.0);
+        }
 }

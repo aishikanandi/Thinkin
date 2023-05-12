@@ -93,3 +93,14 @@ nav.primary-navigation1 {
   ul li a {
     transition: all 0.5s ease;
   }
+
+  @media only screen and (max-width:480px){
+    .topbar{
+      min-height: 20px !important;
+    }
+    nav.primary-navigation1 {
+      margin: 0 auto;
+      padding-top: 9px;
+      padding-bottom: 5px;
+    }
+  }
