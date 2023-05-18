@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Bebas+Neue&family=Josefin+Sans:wght@300;400&family=Lilita+One&family=Nunito+Sans:wght@200;300;400;600&family=Open+Sans:wght@300&family=Teko:wght@400;500&family=Varela+Round&display=swap');
 .post{
     
-    width: 350px;
-    min-height: 100%;
-    margin: 0% 1% 4% 4%;
+    width: 330px;
+    min-height: 80%;
+    margin: 0% 1% 4% 2%;
     font-weight: bold; 
     border-style:groove;
     padding: 2%;
