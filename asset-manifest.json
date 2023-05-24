@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d622ebb4.css",
-    "main.js": "/static/js/main.389d40a0.js",
-    "static/media/business.jpg": "/static/media/business.35f92c4f70e7c99e0ef9.jpg",
-    "static/media/philosophy.jpg": "/static/media/philosophy.99d9c45c59a1537d0620.jpg",
-    "static/media/technology.jpg": "/static/media/technology.539fd9ccf1e29d710eac.jpg",
-    "static/media/technologys.jpg": "/static/media/technologys.ac4b97b027ea6b58e8a6.jpg",
-    "static/media/leadership.jpg": "/static/media/leadership.b7c1bc4a98d4f6c34606.jpg",
-    "static/media/leaderships.jpg": "/static/media/leaderships.d850b8a7511f5d00ac6e.jpg",
-    "static/media/economy.jpeg": "/static/media/economy.28ab2af497ef2e66dfce.jpeg",
-    "index.html": "/index.html",
-    "main.d622ebb4.css.map": "/static/css/main.d622ebb4.css.map",
-    "main.389d40a0.js.map": "/static/js/main.389d40a0.js.map"
+    "main.css": "/Thinkin/static/css/main.cc44b9be.css",
+    "main.js": "/Thinkin/static/js/main.389d40a0.js",
+    "static/media/business.jpg": "/Thinkin/static/media/business.35f92c4f70e7c99e0ef9.jpg",
+    "static/media/philosophy.jpg": "/Thinkin/static/media/philosophy.99d9c45c59a1537d0620.jpg",
+    "static/media/technology.jpg": "/Thinkin/static/media/technology.539fd9ccf1e29d710eac.jpg",
+    "static/media/technologys.jpg": "/Thinkin/static/media/technologys.ac4b97b027ea6b58e8a6.jpg",
+    "static/media/leadership.jpg": "/Thinkin/static/media/leadership.b7c1bc4a98d4f6c34606.jpg",
+    "static/media/leaderships.jpg": "/Thinkin/static/media/leaderships.d850b8a7511f5d00ac6e.jpg",
+    "static/media/economy.jpeg": "/Thinkin/static/media/economy.28ab2af497ef2e66dfce.jpeg",
+    "index.html": "/Thinkin/index.html",
+    "main.cc44b9be.css.map": "/Thinkin/static/css/main.cc44b9be.css.map",
+    "main.389d40a0.js.map": "/Thinkin/static/js/main.389d40a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d622ebb4.css",
+    "static/css/main.cc44b9be.css",
     "static/js/main.389d40a0.js"
   ]
 }
