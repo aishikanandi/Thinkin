@@ -23,7 +23,7 @@ import Eco4 from './singlePages/eco4.jsx'
 import Mark1 from './singlePages/mark1.jsx'
 import Mark2 from './singlePages/mark2.jsx'
 import Mark3 from './singlePages/mark3.jsx'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
       
       {/* <Single /> */}
       
-      <BrowserRouter>
+      <HashRouter>
       <Topbar/>
         <Routes>
         <Route exact path='/' element={ <Home/>}/>
@@ -58,7 +58,7 @@ function App() {
           <Route exact path='mark2' element={<Mark2/>} />
           <Route exact path='mark3' element={<Mark3/>} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer/>
       
       {/* <Home/> */}
