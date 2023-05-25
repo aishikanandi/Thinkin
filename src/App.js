@@ -34,7 +34,7 @@ function App() {
       <HashRouter>
       <Topbar/>
         <Routes>
-        <Route exact path='#' element={ <Home/>}/>
+        <Route exact path='' element={ <Home/>}/>
           <Route exact path='about' element={ <About/>}/>
           <Route exact path='marketing' element={<Marketing/>} />
           <Route exact path='business' element={<Business/>} />
