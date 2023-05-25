@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/aishikanandi/Thinkin/static/css/main.90d38918.css",
-    "main.js": "/aishikanandi/Thinkin/static/js/main.9d654a9e.js",
-    "static/media/business.jpg": "/aishikanandi/Thinkin/static/media/business.35f92c4f70e7c99e0ef9.jpg",
-    "static/media/philosophy.jpg": "/aishikanandi/Thinkin/static/media/philosophy.99d9c45c59a1537d0620.jpg",
-    "static/media/technology.jpg": "/aishikanandi/Thinkin/static/media/technology.539fd9ccf1e29d710eac.jpg",
-    "static/media/technologys.jpg": "/aishikanandi/Thinkin/static/media/technologys.ac4b97b027ea6b58e8a6.jpg",
-    "static/media/leadership.jpg": "/aishikanandi/Thinkin/static/media/leadership.b7c1bc4a98d4f6c34606.jpg",
-    "static/media/leaderships.jpg": "/aishikanandi/Thinkin/static/media/leaderships.d850b8a7511f5d00ac6e.jpg",
-    "static/media/economy.jpeg": "/aishikanandi/Thinkin/static/media/economy.28ab2af497ef2e66dfce.jpeg",
-    "index.html": "/aishikanandi/Thinkin/index.html",
-    "main.90d38918.css.map": "/aishikanandi/Thinkin/static/css/main.90d38918.css.map",
-    "main.9d654a9e.js.map": "/aishikanandi/Thinkin/static/js/main.9d654a9e.js.map"
+    "main.css": "/Thinkin/static/css/main.cc44b9be.css",
+    "main.js": "/Thinkin/static/js/main.9d654a9e.js",
+    "static/media/business.jpg": "/Thinkin/static/media/business.35f92c4f70e7c99e0ef9.jpg",
+    "static/media/philosophy.jpg": "/Thinkin/static/media/philosophy.99d9c45c59a1537d0620.jpg",
+    "static/media/technology.jpg": "/Thinkin/static/media/technology.539fd9ccf1e29d710eac.jpg",
+    "static/media/technologys.jpg": "/Thinkin/static/media/technologys.ac4b97b027ea6b58e8a6.jpg",
+    "static/media/leadership.jpg": "/Thinkin/static/media/leadership.b7c1bc4a98d4f6c34606.jpg",
+    "static/media/leaderships.jpg": "/Thinkin/static/media/leaderships.d850b8a7511f5d00ac6e.jpg",
+    "static/media/economy.jpeg": "/Thinkin/static/media/economy.28ab2af497ef2e66dfce.jpeg",
+    "index.html": "/Thinkin/index.html",
+    "main.cc44b9be.css.map": "/Thinkin/static/css/main.cc44b9be.css.map",
+    "main.9d654a9e.js.map": "/Thinkin/static/js/main.9d654a9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.90d38918.css",
+    "static/css/main.cc44b9be.css",
     "static/js/main.9d654a9e.js"
   ]
 }
