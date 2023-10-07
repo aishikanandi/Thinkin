@@ -1,4 +1,5 @@
 import {Topbar} from './topbar/TopBar.jsx'
+import React from 'react';
 import Home from './pages/home/home.jsx';
 import About from './pages/About/about.jsx';
 import Footer from './footer/footer.jsx';

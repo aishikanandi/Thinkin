@@ -1,4 +1,5 @@
 import '../pages.css'
+import React from 'react';
 // import TopBar from '../topbar/Topbar.jsx';
 // import Footer from '../../src/footer/footer.jsx';
 import {Link} from 'react-router-dom'
