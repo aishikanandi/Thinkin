@@ -4,6 +4,7 @@ import '../pages.css'
 import {Link} from 'react-router-dom'
 import Header from '../../../header/header.jsx';
 import Post from '../../../post/post.jsx';
+import React from 'react';
 function business() {
   return (
     <div className='businessPage'>

@@ -1,7 +1,7 @@
 import Carousel from  '../../Carousel/carousel.jsx'
 import Sidebar from '../../sidebar/sidebar.jsx';
 import Header from '../../header/header.jsx';
-
+import React from 'react';
 
 import './home.css';
 export default function home() {

@@ -103,4 +103,10 @@ nav.primary-navigation1 {
       padding-top: 9px;
       padding-bottom: 5px;
     }
+    .topList{
+      margin-right: 80px;
+    }
+    nav.primary-navigation1 ul li {
+      padding-right: 5px;
+    }
   }

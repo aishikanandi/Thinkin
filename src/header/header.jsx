@@ -2,7 +2,7 @@ import './header.css'
 import './header.js'
 import Typed from "react-typed";
 import {Link} from "react-router-dom"
-
+import React from 'react';
 export default function header() {
 
   return (

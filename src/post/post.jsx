@@ -1,5 +1,5 @@
 import './post.css'
-
+import React from 'react';
 function post(p) {
   return (
     <div className='post' style={{ '--post': '1' }}>

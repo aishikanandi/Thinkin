@@ -1,6 +1,6 @@
 import './carousel.css'
 import {Link} from "react-router-dom"
-
+import React from 'react';
 export default function carousel() {
   return (
     <div className='carousel1'>

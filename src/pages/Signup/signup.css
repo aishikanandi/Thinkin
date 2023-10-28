@@ -1,0 +1,79 @@
+.signup .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.su{
+  margin: 8% 10% 0% 10%;
+  flex-direction: row;
+  display: flex;
+}
+.signup .card-signup {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.signup .card-signup .card_image {
+  text-align: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.signup .card-signup .card_image img {
+  width: auto;
+  height: 65%;
+  padding-top: 10%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.signup .card-signup .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.signup .card-signup:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.signup .title-white {
+  color: white;
+}
+
+.signup .title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .signup .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+  .card_title p{
+    font-size: 2px;
+  }
+}
+
+@media all and (max-width: 1200px){
+  .su{
+    margin: 3% 10% 0% 10%;
+    flex-direction: column;
+    display: flex;
+  }
+}

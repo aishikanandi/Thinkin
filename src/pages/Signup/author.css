@@ -1,0 +1,77 @@
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .login-form {
+    margin: 8% auto 10% auto;
+    max-width: 25%; 
+    min-height: 50rem;
+  }
+  
+  .login-form h3{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 250%;
+    margin-top: 200%;
+    
+    color:  rgba(184, 44, 16, 0.8);
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 3%;
+  }
+  
+  .login-form button {
+    width: 60%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color:  rgba(184, 44, 16, 0.8);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+  
+  .login-form button:hover {
+    background-color:  rgba(145, 35, 13, 0.8);
+  }
+  
+  .login-form p {
+    margin-top: 10px;
+  }
+
+  @media all and (max-width: 1200px) {
+    .login-container{
+        min-height: 30rem;
+    }
+    .login-form {
+        margin-top: 16%;
+        max-width: 35%;
+    }
+  }
+  
+  @media all and (max-width: 1650px) {
+    .login-container{
+        min-height: 35px;
+    }
+    .login-form {
+        margin-top: 10%;
+    }
+  }
+  
+  @media all and (max-width: 100px) {
+    .login-form{
+        max-width: 40%;
+    }
+  }
+  @media all and (max-width: 550px) {
+    .login-form{
+        max-width: 60%;
+    }
+  }
