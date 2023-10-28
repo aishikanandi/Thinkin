@@ -1,7 +1,6 @@
 import './carousel.css'
 import {Link} from "react-router-dom"
 import React from 'react';
-
 export default function carousel() {
   return (
     <div className='carousel1'>
@@ -102,7 +101,7 @@ Explanation - Folks! The below might help you in your note-making.</h6>
     <div class="childArticle business"></div>
   </div>
   <div class="card4articles" style={{ '--cards': '4' }}>
-  <Link to="/economy" className='Link'><div class="childArticle economy" >
+  <Link to="/economy" className='Link'><div class="childArticle economy" style={{backgroundImage: 'economy.jpeg'}}>
       <h2>Economy</h2>
       <p>4 articles</p>
     </div></Link>
@@ -118,7 +117,7 @@ Explanation - Folks! The below might help you in your note-making.</h6>
     </div></Link>
   </div>
   <div class="card4articles" style={{ '--cards': '1' }}>
-  <Link to="/moral-philosophy" className='Link'><div class="childArticle philosophy">
+  <Link to="/moral-philosophy" className='Link'><div class="childArticle philosophy" >
       <h2>Moral Philosophy</h2>
       <p>1 article</p>
     </div></Link>
