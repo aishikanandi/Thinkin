@@ -10,7 +10,7 @@ export default function sidebar() {
                     AUTHOR
                 </span>
             <br />
-            <img className='photo' src="AKN.jpeg" alt="" />
+            <img className='photo' src={require("../images/AKN.jpeg")} alt="" />
             <br />
             <span className="sidebarTitle name">
                     Ayush Kumar Nandi
@@ -33,16 +33,16 @@ export default function sidebar() {
                 
                 <div className='gallery'>
                     <div className='shrink'>
-                        <img className='photography' src="p3.jpeg" alt="" />
+                        <img className='photography' src={require("../images/p3.jpeg")} alt="" />
                     </div>
                     <div className='shrink'>
-                        <img className='photography' src="p4.jpeg" alt="" />
+                        <img className='photography' src={require("../images/p4.jpeg")} alt="" />
                     </div>
                     <div className='shrink'>
-                        <img className='photography' src="p1.jpeg" alt="" />
+                        <img className='photography' src={require("../images/p1.jpeg")} alt="" />
                     </div>
                     <div className='shrink'>
-                        <img className='photography' src="p2.jpeg" alt="" />
+                        <img className='photography' src={require("../images/p2.jpeg")} alt="" />
                     </div>
                 </div>
             </div>

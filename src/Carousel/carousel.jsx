@@ -101,7 +101,7 @@ Explanation - Folks! The below might help you in your note-making.</h6>
     <div class="childArticle business"></div>
   </div>
   <div class="card4articles" style={{ '--cards': '4' }}>
-  <Link to="/economy" className='Link'><div class="childArticle economy" >
+  <Link to="/economy" className='Link'><div class="childArticle economy" style={{backgroundImage: 'economy.jpeg'}}>
       <h2>Economy</h2>
       <p>4 articles</p>
     </div></Link>

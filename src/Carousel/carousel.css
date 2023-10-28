@@ -180,10 +180,10 @@ position: absolute;
       width: 100% !important;
     }
     .tech{
-      background-image: url("%PUBLIC_URL%/technologys.jpg") !important;
+      background-image: url("../images/technologys.jpg") !important;
     }
     .leadership{
-      background-image: url('%PUBLIC_URL%/leaderships.jpg') !important;
+      background-image: url('../images/leaderships.jpg') !important;
     }
   }
 
@@ -209,23 +209,23 @@ position: absolute;
     z-index: 5;
   }
   .economy{
-    background-image: url("%PUBLIC_URL%/economy.jpeg");
+    background-image: url("../images/economy.jpeg");
     background-size: cover;
   }
   .tech{
-    background-image: url("%PUBLIC_URL%/technology.jpg");
+    background-image: url("../images/technology.jpg");
     background-size: cover;
   }
   .business{
-    background-image: url("%PUBLIC_URL%/business.jpg");
+    background-image: url("../images/business.jpg");
     background-size: cover;
   }
   .leadership{
-    background-image: url("%PUBLIC_URL%/leadership.jpg");
+    background-image: url("../images/leadership.jpg");
     background-size: cover;
   }
   .philosophy{
-    background-image: url("%PUBLIC_URL%/philosophy.jpg");
+    background-image: url("../images/philosophy.jpg");
     background-size: cover;
     width: 50%;
   }

@@ -9,7 +9,7 @@ function Finance() {
       <div className="pagePosts noPosts">
         <h5 className="pageTitle">Finance</h5>
          <br />
-          <img class="gif" src="75WF.gif" alt="" />
+          <img class="gif" src={require("../../../images/75WF.gif")} alt="" />
           <h5 className="textNoPage">I'm still THINKIN! Come back later!</h5>
         </div>
     </div>

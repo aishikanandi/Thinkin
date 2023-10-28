@@ -10,7 +10,7 @@ function signup() {
       <div className="su">
       <Link to="/author" className="card-signup 4">
       <div class="card_image">
-          <img src="writer.png" />
+          <img src={require("../../images/writer.png")} />
         </div>
         <div class="card_title title-black">
         <p>Author?</p>
@@ -18,7 +18,7 @@ function signup() {
       </Link>
       <Link to="/" className="card-signup 4">
       <div class="card_image">
-          <img src="open-book.png" />
+          <img src={require("../../images/open-book.png")} />
         </div>
         <div class="card_title title-black">
         <p>Reader?</p>
