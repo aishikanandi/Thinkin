@@ -4,20 +4,20 @@ import Header from "../../header/header.jsx";
 import "./author.css";
 import { Link } from "react-router-dom";
 
-function Author() {
+function Author({updateIsAuthenticated}) {
     const history=useNavigate();
     const [username, setUsername]=useState("");
     const [password, setPassword]=useState("");
     const [error, setError]=useState(false);
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
-
+    
     const handleSubmit=async (e)=>{
         if(username==="ayushnandi" && password==="ilovesrk"){
-            history("/", { state: { isAuthenticated: true } });
-            setIsAuthenticated(true);
+          updateIsAuthenticated(true);  
+          history("/");
+            
         }else{
             setError("Incorrect username or password");
-            setIsAuthenticated(false);
+            
         }
     };
   return (

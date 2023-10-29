@@ -1,5 +1,5 @@
 import {Topbar} from './topbar/TopBar.jsx'
-import React from 'react';
+import React, {useState} from 'react';
 import Home from './pages/home/home.jsx';
 import About from './pages/About/about.jsx';
 import Footer from './footer/footer.jsx';
@@ -28,16 +28,20 @@ import Signup from './pages/Signup/signup.jsx'
 import Author from './pages/Signup/author.jsx'
 import Reader from './pages/Signup/reader.jsx'
 import {HashRouter, Routes, Route } from "react-router-dom";
-import { useLocation,Outlet } from "react-router-dom";
+import { useLocation} from "react-router-dom";
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   
+  const updateIsAuthenticated = (value) => {
+    setIsAuthenticated(value);
+  };
   return (
-    <div style={{height:'100%'}}>
+     <div style={{height:'100%'}}>
       
       {/* <Single /> */}
       
       <HashRouter>
-      <Topbar />
+      <Topbar isAuthenticated={isAuthenticated}/>
         <Routes>
         <Route exact path='' element={ <Home/>}/>
           <Route exact path='about' element={ <About/>}/>
@@ -62,7 +66,7 @@ function App() {
           <Route exact path='mark1' element={<Mark1/>} />
           <Route exact path='mark2' element={<Mark2/>} />
           <Route exact path='mark3' element={<Mark3/>} />
-          <Route exact path='author' element={<Author/>} />
+          <Route exact path='author' element={<Author updateIsAuthenticated={updateIsAuthenticated}/>} />
           <Route exact path='signup' element={<Signup/>} />
           <Route exact path='reader' element={<Reader/>} />
         </Routes>

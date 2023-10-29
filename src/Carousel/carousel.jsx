@@ -101,7 +101,7 @@ Explanation - Folks! The below might help you in your note-making.</h6>
     <div class="childArticle business"></div>
   </div>
   <div class="card4articles" style={{ '--cards': '4' }}>
-  <Link to="/economy" className='Link'><div class="childArticle economy" style={{backgroundImage: 'economy.jpeg'}}>
+  <Link to="/economy" className='Link'><div class="childArticle economy">
       <h2>Economy</h2>
       <p>4 articles</p>
     </div></Link>
@@ -110,13 +110,13 @@ Explanation - Folks! The below might help you in your note-making.</h6>
     <div class="childArticle economy"></div>
 
   </div>
-  <div class="card4articles" style={{ '--cards': '1' }}>
+  <div class="card4articles" style={{ '--cards': '2' }}>
   <Link to="/leadership" className='Link'><div class="childArticle leadership">
       <h2>Leadership</h2>
       <p>1 article</p>
     </div></Link>
   </div>
-  <div class="card4articles" style={{ '--cards': '1' }}>
+  <div class="card4articles" style={{ '--cards': '2' }}>
   <Link to="/moral-philosophy" className='Link'><div class="childArticle philosophy" >
       <h2>Moral Philosophy</h2>
       <p>1 article</p>

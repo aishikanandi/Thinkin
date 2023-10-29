@@ -187,13 +187,7 @@ position: absolute;
     }
   }
 
-  .card4articles :hover {
-    --offset-multiplier: 6px;
-  }
-  .card4articles :hover {
-    --translate: calc(-1px * (var(--cards) - 1));
-    transition: transform 0.3s ease;
-  }
+  
   
   .childArticle {
     position: absolute;

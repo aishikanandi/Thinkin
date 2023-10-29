@@ -11,9 +11,9 @@ export function Topbar({isAuthenticated} ) {
             <li><Link to="/about" style={{ color: 'black', textDecoration: 'none' }}>About</Link></li>
             <li><Link to="/signup" style={{ color: 'black', textDecoration: 'none'}}>Sign up</Link></li>
             {isAuthenticated && (
-          <li>
+          
             <li><Link to="/create" style={{ color: 'black', textDecoration: 'none'}}>New Post</Link></li>
-          </li>
+          
         )}
           </ul>
         </nav>
