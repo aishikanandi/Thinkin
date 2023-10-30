@@ -5,7 +5,7 @@ export default function tech1() {
   return (
     <div>
     <Header/>
-      <Single imageUrl="https://www.marketing91.com/wp-content/uploads/2022/09/Criticism-of-the-AIDA-model-1024x585.jpg"
+      <Single date="October 29" imageUrl="https://www.marketing91.com/wp-content/uploads/2022/09/Criticism-of-the-AIDA-model-1024x585.jpg"
           title="AIDA Model" 
           content="Narrative – Folks! This is something you need to read. 
 

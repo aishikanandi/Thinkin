@@ -4,13 +4,13 @@ import Header from '../../header/header.jsx';
 import React from 'react';
 
 import './home.css';
-export default function home() {
+export default function home({isAuthenticated}) {
   return (
     <>
     <Header/>
     <div className='cont'>
       <div className='left'>
-        <Carousel className='box2'/>
+        <Carousel className='box2' isAuthenticated={isAuthenticated}/>
 
       </div>
     <div className='right'>

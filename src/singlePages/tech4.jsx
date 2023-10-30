@@ -5,7 +5,7 @@ export default function tech1() {
   return (
     <div>
     <Header/>
-      <Single imageUrl="https://fdn.gsmarena.com/imgroot/news/23/01/bharos-announced/-1220x526/gsmarena_001.jpg" title="BharOS - Indian Operating System"
+      <Single date="October 29" imageUrl="https://fdn.gsmarena.com/imgroot/news/23/01/bharos-announced/-1220x526/gsmarena_001.jpg" title="BharOS - Indian Operating System"
       content="Suno! Ye kya ab bhi purane OS par ho, naya OS dalwalo abb! Yet another outstanding Aatmanirbhar Abhiyaan feat unlocked. The BharOS. A new Operating system that soon our smartphones will be able to run. Finally, we have a new player in the market!
  
       The BharOS was developed by J & K operations Private limited under the incubation of IIT Madras and Pravartak technology foundation. This new operating system puts all users at ease while considering security. It is claimed to be the best secure box where the user gets all the control. That is the USP! Once the user is assured full control, I guess you would not doubt its security again. It gives the flexibility to the user to choose the app that suits their needs. Data belongs to the consumers, and with this novel idea, this OS was created. This OS can empower you whether to collect data or not. Now isn't this interesting.

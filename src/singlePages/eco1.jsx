@@ -5,7 +5,7 @@ export default function eco1() {
   return (
     <div>
     <Header/>
-      <Single imageUrl="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/upi-sixteen_nine.jpg" title="UPI - Unified Payment Interface"
+      <Single imageUrl="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/upi-sixteen_nine.jpg" title="UPI - Unified Payment Interface" date="October 29"
         content="“Bhaiya ji ye kya, 3 rupay change nahi hai kya? Aap humesha candy de dete ho” :(
 Readers! You must have come across this scenario very well during your childhood. Feeling nostalgic about your childhood, right? :D
  

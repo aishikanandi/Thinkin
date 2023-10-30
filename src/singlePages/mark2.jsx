@@ -5,7 +5,7 @@ export default function tech1() {
   return (
     <div>
     <Header/>
-      <Single imageUrl="https://static.wixstatic.com/media/856e46_7d8c71ef767b45f68cc08d95695a0439~mv2.jpg/v1/fill/w_640,h_550,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/856e46_7d8c71ef767b45f68cc08d95695a0439~mv2.jpg"
+      <Single date="October 29" imageUrl="https://static.wixstatic.com/media/856e46_7d8c71ef767b45f68cc08d95695a0439~mv2.jpg/v1/fill/w_640,h_550,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/856e46_7d8c71ef767b45f68cc08d95695a0439~mv2.jpg"
           title="Holistic Marketing" 
           content="Jargon of the day
           Holistic: Binding whole as one but not just a part.

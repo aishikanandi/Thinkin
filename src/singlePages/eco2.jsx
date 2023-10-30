@@ -5,7 +5,7 @@ export default function tech1() {
   return (
     <div>
     <Header/>
-      <Single imageUrl="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/04/11111857/f33e3a56b71ea9375b188e0bf5f8aa21.jpg" title="Foreign Payment Investment"
+      <Single date="October 29" imageUrl="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/04/11111857/f33e3a56b71ea9375b188e0bf5f8aa21.jpg" title="Foreign Payment Investment"
         content="Sensex ki aakramak ballebaazi ne Inidan stock-market ki team ko nayi record dilayi. Abb market me iss player ka mool badh gaya hai. Khareeddar hain FPI!!
 
         Relax! If you couldn't comprehend, let me spill the beans, it is lately seen that the Indian stock market is heading in an entirely different direction when compared to the other stock market. India is the only large market that has crossed previous record highs despite rising inflation.

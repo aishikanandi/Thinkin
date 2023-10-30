@@ -5,7 +5,7 @@ export default function tech1() {
   return (
     <div>
     <Header/>
-      <Single imageUrl="https://pwpblog.wpengine.com/wp-content/uploads/2022/08/D2C-Ecommerce.png" title="D2C: Direct-To-Consumers" 
+      <Single date="October 29" imageUrl="https://pwpblog.wpengine.com/wp-content/uploads/2022/08/D2C-Ecommerce.png" title="D2C: Direct-To-Consumers" 
           content="This morning I stumbled upon couple of interesting plots. One thought that fascinated me to write on was, how Direct-To-Consumers (D2C) business model has been hitting the trends post-pandemic.
  
           D2C has grown by the prophesied growth rate i.e., by 20% in 2021. It is also speculated that India’s D2C market is likely to reach an expansion of approximately $100 billion by 2025 observing its exponential growth in the past few years.

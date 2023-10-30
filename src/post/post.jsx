@@ -19,7 +19,7 @@ function post(p) {
           <span>{p.content}</span>
         </div>
         <div className='Date'>
-        <span className="postDate">1 hour ago</span>
+        <span className="postDate">{p.date}</span>
         </div>
       </div>
     </div>

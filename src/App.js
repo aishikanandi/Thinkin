@@ -27,6 +27,7 @@ import Mark3 from './singlePages/mark3.jsx'
 import Signup from './pages/Signup/signup.jsx'
 import Author from './pages/Signup/author.jsx'
 import Reader from './pages/Signup/reader.jsx'
+import Create from './pages/home/create/create.jsx'
 import {HashRouter, Routes, Route } from "react-router-dom";
 import { useLocation} from "react-router-dom";
 function App() {
@@ -43,7 +44,7 @@ function App() {
       <HashRouter>
       <Topbar isAuthenticated={isAuthenticated}/>
         <Routes>
-        <Route exact path='' element={ <Home/>}/>
+        <Route exact path='' element={ <Home isAuthenticated={isAuthenticated}/>}/>
           <Route exact path='about' element={ <About/>}/>
           <Route exact path='marketing' element={<Marketing/>} />
           <Route exact path='business' element={<Business/>} />
@@ -69,6 +70,7 @@ function App() {
           <Route exact path='author' element={<Author updateIsAuthenticated={updateIsAuthenticated}/>} />
           <Route exact path='signup' element={<Signup/>} />
           <Route exact path='reader' element={<Reader/>} />
+          <Route exact path='create' element={<Create/>} />
         </Routes>
       
       </HashRouter>

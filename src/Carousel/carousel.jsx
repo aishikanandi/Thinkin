@@ -1,12 +1,13 @@
 import './carousel.css'
 import {Link} from "react-router-dom"
 import React from 'react';
-export default function carousel() {
+export default function carousel({isAuthenticated}
+) {
   return (
     <div className='carousel1'>
       <div className="onlyCarousel">
       <div className="recentBlog">
-    <h5>MISSED MY RECENT BLOGS?</h5>
+    {isAuthenticated && <h5>MY POSTS</h5> } {!(isAuthenticated) &&<h5>MISSED MY RECENT BLOGS?</h5>}
     </div>   
 <div id="Carousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">

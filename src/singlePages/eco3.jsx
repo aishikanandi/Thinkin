@@ -5,7 +5,7 @@ export default function tech1() {
   return (
     <div>
     <Header/>
-      <Single imageUrl="https://img.freepik.com/free-vector/hand-drawn-import-export-graphics_23-2149164081.jpg" title="Foreign Trade Policy" 
+      <Single date="October 29" imageUrl="https://img.freepik.com/free-vector/hand-drawn-import-export-graphics_23-2149164081.jpg" title="Foreign Trade Policy" 
         content="Nayiiiii socchh...... Nayaaa Protsaahan (New ideas, new encouragements)
  
  I was yet again amazed to read an interesting article, that India's Foreign Trade Policy aims to boost India's exports to $2 trillion by 2030 that too without any sunset clause, so I felt to share it with readers and get what your intellectual opinion would be.

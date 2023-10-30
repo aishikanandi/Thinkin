@@ -12,7 +12,7 @@ function business() {
         <h5 className="pageTitle">Business</h5>
         <div className="pagePosts">
           
-        <Link to="/mark1" className='postLink'><Post imageUrl="https://www.marketing91.com/wp-content/uploads/2022/09/Criticism-of-the-AIDA-model-1024x585.jpg"
+        <Link to="/mark1" className='postLink'><Post date="October 29" imageUrl="https://www.marketing91.com/wp-content/uploads/2022/09/Criticism-of-the-AIDA-model-1024x585.jpg"
           title="AIDA Model" category="Marketing"
           content="Narrative – Folks! This is something you need to read. 
 
@@ -33,7 +33,7 @@ function business() {
           Incite: Motivated, encouraged (Remember as Excited inside which makes you motivated)
           
           Flyer: Handout, Leaflet, pamphlets (Remember: Children make paper planes out of pamphlets and enjoy flying them around.)"/></Link>
-          <Link to="/mark2" className='postLink'><Post 
+          <Link to="/mark2" className='postLink'><Post date="October 29"
           imageUrl="https://static.wixstatic.com/media/856e46_7d8c71ef767b45f68cc08d95695a0439~mv2.jpg/v1/fill/w_640,h_550,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/856e46_7d8c71ef767b45f68cc08d95695a0439~mv2.jpg"
           title="Holistic Marketing" 
           category="Marketing"
@@ -53,7 +53,7 @@ function business() {
           Strife: Conflict
           Endeavor: Try (Remember as: End - Never)
           Elevate: Rise (Remember: Elevator takes a person higher)"/></Link>
-          <Link to="/mark3" className='postLink'><Post imageUrl="https://pwpblog.wpengine.com/wp-content/uploads/2022/08/D2C-Ecommerce.png" category="marketing" title="D2C: Direct-To-Consumers" 
+          <Link to="/mark3" className='postLink'><Post date="October 29" imageUrl="https://pwpblog.wpengine.com/wp-content/uploads/2022/08/D2C-Ecommerce.png" category="marketing" title="D2C: Direct-To-Consumers" 
           content="This morning I stumbled upon couple of interesting plots. One thought that fascinated me to write on was, how Direct-To-Consumers (D2C) business model has been hitting the trends post-pandemic.
  
           D2C has grown by the prophesied growth rate i.e., by 20% in 2021. It is also speculated that India’s D2C market is likely to reach an expansion of approximately $100 billion by 2025 observing its exponential growth in the past few years.

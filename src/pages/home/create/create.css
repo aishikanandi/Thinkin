@@ -1,0 +1,106 @@
+.createDiv{
+   
+    padding: 6%;
+}
+.writeFormGroup{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+.createDiv{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+.addImg{
+    height: 3rem;
+    width: auto;
+    margin-top: 1em;
+}
+.addImg:hover{
+    cursor: pointer;
+}
+.writeRight{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 95%;
+}
+textarea{
+    min-height: 50em;
+    margin-top: 2em;
+}
+.writeInput{
+    border-color: rgba(184, 44, 16, 0.4) !important;
+    border-radius: 3em !important;
+    border-width: 0.2em !important;
+    border-style: dashed !important;
+    padding: 1.5em !important;
+}
+.writeInput:click{
+    border-color: rgba(184, 44, 16, 0.8);
+    border-style: solid;
+}
+
+.writeSubmit{
+    background-color: rgb(85, 79, 79, 0.6);
+    margin-top: 2em;
+    padding: 0.7em 3em;
+    border-radius: 1em;
+    color: white;
+    border-style: none;
+}
+.writeSubmit:hover{
+    background-color: rgba(184, 44, 16, 0.8) ;
+}
+.writeText{
+    font-family: 'Varela round', sans-serif;
+    color: rgb(85, 79, 79, 0.7);
+}
+input[type="date"], #cat{
+    margin-top: 2%;
+    padding: 0.5em;
+    font-size: 1em;
+    border-color: rgb(85, 79, 79, 0.3) !important;
+    border-radius: 0.5em !important;
+    border-width: 0.2em !important;
+    border-style: dashed !important;
+    padding: 1.5em !important;
+  }
+#cat{
+    width: 40%;
+    background-color: white !important;
+}
+  label[for="postDate"], label[for="cat"] {
+    display: block;
+    margin-top: 4%;
+    font-weight: bold;
+    margin-right: 2%;
+  }
+  .calcat{
+    justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  .calendarDiv{
+    justify-content: center;
+      align-items: center;
+    width: 50%;
+  }.categorySelect{
+    width: 50%;
+    justify-content: center;
+      align-items: center;
+  }
+ 
+  
+  

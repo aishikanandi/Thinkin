@@ -5,7 +5,7 @@ export default function tech1() {
   return (
     <div>
     <Header/>
-      <Single title="Digital Rupee" imageUrl="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/finance/digital-rupee-impact-on-indian-economy-717x404.jpg" 
+      <Single date="October 29" title="Digital Rupee" imageUrl="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/finance/digital-rupee-impact-on-indian-economy-717x404.jpg" 
     content="'RBI launches India's first Digital rupee' hitting the trending news section. Yet another FinTech advancement we must be proud of our country India, has advanced towards.
 
     What is a digital rupee now? Heard about E-money, Digital money, and cryptocurrency, what is a digital rupee? Let me spill this straight and easy. As we know e-money that has become an integral part of our life, involved in day-to-day transactions, they have a legal tender, which means they have a form or structure, whereas a digital rupee does not have one. 'A form of existence without existing.' Yet there would be a commercial existence of the same. So far RBI had decided to proceed with the pilot project from November 1, 2022. The pilot project for retail digital rupee would take a month or so.

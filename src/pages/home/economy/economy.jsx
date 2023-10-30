@@ -12,7 +12,7 @@ function economy() {
         <Header/>
         <h5 className="pageTitle">Economy</h5>
         <div className="pagePosts">
-        <Link to="/eco1" className='postLink'><Post imageUrl="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/upi-sixteen_nine.jpg" category="Economy" title="UPI - Unified Payment Interface"
+        <Link to="/eco1" className='postLink'><Post date="October 29" imageUrl="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202303/upi-sixteen_nine.jpg" category="Economy" title="UPI - Unified Payment Interface"
         content="“Bhaiya ji ye kya, 3 rupay change nahi hai kya? Aap humesha candy de dete ho” :(
 Readers! You must have come across this scenario very well during your childhood. Feeling nostalgic about your childhood, right? :D
  
@@ -21,7 +21,7 @@ Today’s discussion is based on similar lines. UPI demolishes the toffee busine
 Research says that there have been approximately 680 crore UPI transactions worth 12 lakh crore. There has been a steep decline in toffees reported by Nestle, ITC, Parle, and Mars. Hershey's which has been a prominent player in toffees and chocolate production has found itself to be affected the worst in the Indian market post the COVID pandemic. Two main reasons have been; the contactless payment, the other being the hassle-free payment mode without worrying about the coins in exchange.
  
 Therefore, the takeaway for readers from this post is that we could see how a financial instrument has replaced a tangible commodity. As a result, consumer behaviour of purchasing has been affected to a greater extent by UPI. This seems to put the best product lines of some giant players in markets at greater risk. I believe that good branding and strategic positioning of the product over the counter is the need of the hour by the market giants. I hence would keep this forum open for some healthy discussion. What I would like to hear from the readers is that would it be right to assume that the growth of UPI in the Indian market at this rate can move the profit-making commodity like toffees towards extinction. Has UPI completely demolished the candy market? How do you think the market should react to this hereafter? Would be glad to see you opine on this. Jovial reading!"></Post></Link>
-        <Link to="/eco2" className='postLink'><Post imageUrl="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/04/11111857/f33e3a56b71ea9375b188e0bf5f8aa21.jpg" category="Economy" title="Foreign Payment Investment"
+        <Link to="/eco2" className='postLink'><Post date="October 29" imageUrl="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/04/11111857/f33e3a56b71ea9375b188e0bf5f8aa21.jpg" category="Economy" title="Foreign Payment Investment"
         content="Sensex ki aakramak ballebaazi ne Inidan stock-market ki team ko nayi record dilayi. Abb market me iss player ka mool badh gaya hai. Khareeddar hain FPI!!
 
         Relax! If you couldn't comprehend, let me spill the beans, it is lately seen that the Indian stock market is heading in an entirely different direction when compared to the other stock market. India is the only large market that has crossed previous record highs despite rising inflation.
@@ -33,7 +33,7 @@ Therefore, the takeaway for readers from this post is that we could see how a fi
         
         What I would like to know from the readers is that can we agree on the fact that Foreign Portfolio Investment would remain only a power play hitter (obtaining short-run profits) or if can we eye towards long-run profitable investments. Also, would like to hear your opinion on what are the micro managerial implications of such investments in time of shooting inflation. Jovial reading!"></Post></Link>
         
-        <Link to="/eco3" className='postLink'><Post imageUrl="https://img.freepik.com/free-vector/hand-drawn-import-export-graphics_23-2149164081.jpg" category="Economy" title="Foreign Trade Policy" 
+        <Link to="/eco3" className='postLink'><Post date="October 29"  imageUrl="https://img.freepik.com/free-vector/hand-drawn-import-export-graphics_23-2149164081.jpg" category="Economy" title="Foreign Trade Policy" 
         content="Nayiiiii socchh...... Nayaaa Protsaahan (New ideas, new encouragements)
  
  I was yet again amazed to read an interesting article, that India's Foreign Trade Policy aims to boost India's exports to $2 trillion by 2030 that too without any sunset clause, so I felt to share it with readers and get what your intellectual opinion would be.
@@ -51,7 +51,7 @@ Therefore, the takeaway for readers from this post is that we could see how a fi
  For the managerial implications I believe, the new foreign trade policy can potentially create new opportunities for businesses by opening new markets, reducing trade barriers, and providing incentives for exports. On the contrary, I also believe it can also pose challenges for industries that rely heavily on imports or face increased competition from foreign firms.
   
  Let us find out what you guys think, and what can be good about our new agenda. Would like to know from the readers. Jovial reading!!"></Post></Link>
-    <Link to="/eco4" className='postLink'><Post category="Economy" title="Digital Rupee" imageUrl="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/finance/digital-rupee-impact-on-indian-economy-717x404.jpg" 
+    <Link to="/eco4" className='postLink'><Post date="October 29" category="Economy" title="Digital Rupee" imageUrl="https://www.idfcfirstbank.com/content/dam/idfcfirstbank/images/blog/finance/digital-rupee-impact-on-indian-economy-717x404.jpg" 
     content="'RBI launches India's first Digital rupee' hitting the trending news section. Yet another FinTech advancement we must be proud of our country India, has advanced towards.
 
     What is a digital rupee now? Heard about E-money, Digital money, and cryptocurrency, what is a digital rupee? Let me spill this straight and easy. As we know e-money that has become an integral part of our life, involved in day-to-day transactions, they have a legal tender, which means they have a form or structure, whereas a digital rupee does not have one. 'A form of existence without existing.' Yet there would be a commercial existence of the same. So far RBI had decided to proceed with the pilot project from November 1, 2022. The pilot project for retail digital rupee would take a month or so.
