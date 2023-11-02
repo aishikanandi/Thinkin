@@ -34,7 +34,7 @@
     text-align: center;
     justify-content: center;
     margin: auto;
-    width: 95%;
+    width: 100%;
 }
 textarea{
     min-height: 50em;
@@ -81,7 +81,7 @@ input[type="date"], #cat{
     width: 40%;
     background-color: white !important;
 }
-  label[for="postDate"], label[for="cat"] {
+  label[for="postDate"], label[for="cat"], label[for="fileInput"] {
     display: block;
     margin-top: 4%;
     font-weight: bold;
@@ -92,12 +92,17 @@ input[type="date"], #cat{
       align-items: center;
       width: 100%;
   }
+  .imageSelect{
+    justify-content: center;
+      align-items: center;
+    width: 33.33%;
+  }
   .calendarDiv{
     justify-content: center;
       align-items: center;
-    width: 50%;
+    width: 33.33%;
   }.categorySelect{
-    width: 50%;
+    width: 33.33%;
     justify-content: center;
       align-items: center;
   }

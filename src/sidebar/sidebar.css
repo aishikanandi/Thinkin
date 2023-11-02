@@ -64,9 +64,6 @@
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
         -moz-filter: grayscale(0%);
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
     transition: 0.7s ease;
     }
 .photography{

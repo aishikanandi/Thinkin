@@ -10,6 +10,9 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
     "jquery": "^3.6.4",
     "mui": "^0.0.1",
@@ -52,5 +55,6 @@
     "gh-pages": "^5.0.0",
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1"
-  }
+  },
+  "proxy": "http://localhost:6000/api/"
 }

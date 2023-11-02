@@ -2,8 +2,9 @@ import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../../header/header.jsx";
 import "./author.css";
+import dotenv from 'dotenv';
 import { Link } from "react-router-dom";
-
+dotenv.config();
 function Author({updateIsAuthenticated}) {
     const history=useNavigate();
     const [username, setUsername]=useState("");

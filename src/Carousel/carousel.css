@@ -87,12 +87,11 @@ position: absolute;
     position: absolute;
     bottom: 0;
     font-size: 14px;
+    
   }
   
   .articles {
-    max-width: 100%;
-    /* grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); */
-  }
+    width:100%  }
   
   .card4articles {
     cursor: pointer;
@@ -100,7 +99,8 @@ position: absolute;
     height: 0;
     
     padding-bottom: 50%;
-    margin: 2% 6% 6% 0%;
+    width: 50%; /* Set the width of each article (minus some margin) */
+    margin: 8px; /* Adjust the margin between articles for spacing */
     --offset-multiplier: 4px;
     transition: transform 0.6s ease;
     --translate: 0;
@@ -110,11 +110,10 @@ position: absolute;
   .articles {
     display: flex;
     flex-wrap: wrap;
-    
-  }
-  
+}
+
   .card4articles {
-    flex: 1 1 40%; /* initially 3 columns */
+    width: 47%;
     box-sizing: border-box;
     
   }
@@ -180,10 +179,10 @@ position: absolute;
       width: 100% !important;
     }
     .tech{
-      background-image: url("../images/technologys.jpg") !important;
+      background-image: url("../images/technology.jpg") !important;
     }
     .leadership{
-      background-image: url('../images/leaderships.jpg') !important;
+      background-image: url('../images/leadership.jpg') !important;
     }
   }
 
@@ -206,12 +205,28 @@ position: absolute;
     background-image: url("../images/economy.jpeg");
     background-size: cover;
   }
-  .tech{
+  .technology{
     background-image: url("../images/technology.jpg");
     background-size: cover;
   }
-  .business{
-    background-image: url("../images/business.jpg");
+  .operations{
+    background-image: url("../images/operations.jpg");
+    background-size: cover;
+  }
+  .humanResource{
+    background-image: url("../images/humanResource.jpg");
+    background-size: cover;
+  }
+  .strategy{
+    background-image: url("../images/strategy.jpg");
+    background-size: cover;
+  }
+  .finance{
+    background-image: url("../images/finance.png");
+    background-size: cover;
+  }
+  .marketing{
+    background-image: url("../images/marketing.jpg");
     background-size: cover;
   }
   .leadership{
@@ -221,7 +236,7 @@ position: absolute;
   .philosophy{
     background-image: url("../images/philosophy.jpg");
     background-size: cover;
-    width: 50%;
+    
   }
   .childArticle:nth-child(1) {
     --offset: 0;

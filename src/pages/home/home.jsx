@@ -1,16 +1,18 @@
 import Carousel from  '../../Carousel/carousel.jsx'
 import Sidebar from '../../sidebar/sidebar.jsx';
 import Header from '../../header/header.jsx';
+import {useEffect, useState} from 'react';
 import React from 'react';
+import axios from 'axios';
 
 import './home.css';
-export default function home({isAuthenticated}) {
+export default function Home({posts, cats, isAuthenticated}) {
   return (
     <>
     <Header/>
     <div className='cont'>
       <div className='left'>
-        <Carousel className='box2' isAuthenticated={isAuthenticated}/>
+        <Carousel posts={posts} cats={cats} className='box2' isAuthenticated={isAuthenticated}/>
 
       </div>
     <div className='right'>

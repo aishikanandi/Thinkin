@@ -26,10 +26,10 @@ export default function header() {
       <nav role="navigation" class="primary-navigation">
         <ul>
           <li><Link to="/technology" className='Link header' style={{color: 'black'}}>Technology</Link></li>
-          <li><Link to="/business" className='Link header' style={{color: 'black'}}>Business <span>&#9660;</span></Link>
+          <li className='Link header' style={{color: 'black'}}>Business <span>&#9660;</span>
             <ul class="dropdown">
               <li><Link to="/marketing" className='Link header' style={{color: 'black'}}>Marketing</Link></li>
-              <li><Link to="/hr" className='Link header' style={{color: 'black'}}>Human Resource</Link></li>
+              <li><Link to="/humanResource" className='Link header' style={{color: 'black'}}>Human Resource</Link></li>
               <li><Link to="/operations" className='Link header' style={{color: 'black'}}>Operations</Link></li>
               <li><Link to="/strategy" className='Link header' style={{color: 'black'}}>Strategy</Link></li>
               <li><Link to="/finance" className='Link header' style={{color: 'black'}}>Finance</Link></li>
@@ -37,7 +37,7 @@ export default function header() {
           </li>
           <li><Link to="/economy" className='Link header' style={{color: 'black'}}>Economy</Link></li>
           <li><Link to="/leadership" className='Link header' style={{color: 'black'}}>Leadership</Link></li>
-          <li><Link to="/moral-philosophy" className='Link header' style={{color: 'black'}}>Moral Philosophy</Link></li>
+          <li><Link to="/philosophy" className='Link header' style={{color: 'black'}}>Moral Philosophy</Link></li>
         </ul>
       </nav>
       </div>
