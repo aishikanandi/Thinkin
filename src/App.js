@@ -73,7 +73,7 @@ function App() {
           <Route exact path='operations' element={<Template posts={posts} cate={"Operations"}/>} />
           <Route exact path='finance' element={<Template posts={posts} cate={"Finance"}/>}/>
           {posts.map((post, index) => {
-            return <Route exact path={`/${post.title}`} element={<Single title={post.title} description ={post.description} date={post.date.slice(0,10)} imageUrl={post.image} />} key={index} />;
+            return <Route exact path={`/${post.title}`} element={<Single title={post.title} description ={post.description} date={post.date?post.date.slice(0,10):""} imageUrl={post.image.data.data} />} key={index} />;
           })}
           <Route exact path='author' element={<Author updateIsAuthenticated={updateIsAuthenticated}/>} />
           <Route exact path='signup' element={<Signup/>} />

@@ -37,7 +37,7 @@ export default function header() {
           </li>
           <li><Link to="/economy" className='Link header' style={{color: 'black'}}>Economy</Link></li>
           <li><Link to="/leadership" className='Link header' style={{color: 'black'}}>Leadership</Link></li>
-          <li><Link to="/philosophy" className='Link header' style={{color: 'black'}}>Moral Philosophy</Link></li>
+          <li><Link to="/philosophy" className='Link header' style={{color: 'black'}}>Philosophy</Link></li>
         </ul>
       </nav>
       </div>

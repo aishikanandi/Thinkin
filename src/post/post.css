@@ -2,7 +2,7 @@
 .post{
     
     width: 330px;
-    min-height: 80%;
+    min-height: 34em !important;
     margin: 0% 1% 4% 2%;
     font-weight: bold; 
     border-style:groove;
@@ -72,6 +72,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    
 }
 @media only screen and (max-width: 480px) {
     .post{

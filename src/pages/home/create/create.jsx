@@ -6,45 +6,26 @@ import { useNavigate } from 'react-router-dom';
 
 function Create({isAuthenticated}) {
   const navigate = useNavigate();
+  const [imgSubmitted, setImageSubmitted] = useState(false);
   const [articleData, setArticleData] = useState({
     title: '',
     description: '',
-    image: '',
+    image: null,
     date: '',
     category: [] // Make sure to initialize it as an array
   });
-  
+
+
   const setText = (e) => {
     const { name, value } = e.target;
-  
-    if (name === "cars") {
-      // Handle category as an array
-      setArticleData({ ...articleData, category : [value] });
-    } else {
-      setArticleData({ ...articleData, [name]: value });
-    }
-  };
-
-  const [imgSubmitted, setImageSubmitted] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await axios.post('http://localhost:5000/api/posts', articleData);
-      
-      // Log the response data
-      console.log("Response Data:", response.data);
-
-      navigate("/create#/create");
-      setImageSubmitted(false);
-    } catch (error) {
-      console.error('Error posting article:', error);
-    }
+    setArticleData({ ...articleData, [name]: value });
+    console.log("set: ", name, value)
   };
 
   const handleImageChange = (e) => {
-    // Check if a file has been selected
+    const file = e.target.files[0];
+    console.log(file);
+    setArticleData({ ...articleData, image: file });
     const fileInput = document.getElementById("fileInput");
 
     if (fileInput && fileInput.files.length > 0) {
@@ -56,9 +37,39 @@ function Create({isAuthenticated}) {
     } else {
       setImageSubmitted(false);
     }
-
-    setText(e);
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const formData = new FormData();
+      formData.append("title", articleData.title);
+      formData.append("description", articleData.description);
+      formData.append("date", articleData.date);
+      formData.append("category", articleData.category); // Convert array to string
+
+      if (articleData.image) {
+        formData.append("image", articleData.image);
+      }
+
+      const response = await axios.post('http://localhost:5000/api/posts', formData);
+
+      console.log("Response Data:", response.data);
+
+      setArticleData({
+        title: '',
+        description: '',
+        image: null,
+        date: '',
+        category: [],
+      });
+    } catch (error) {
+      console.error('Error posting article:', error);
+  console.log("Request Data:", articleData);
+    }
+  };
+
   if (!isAuthenticated) {
     navigate('/signup');
     return null; // Render nothing if not authenticated
@@ -118,6 +129,7 @@ function Create({isAuthenticated}) {
                     type="file"
                     id="fileInput"
                     style={{ display: "none" }}
+                    name="image"
                     accept="image/*"
                     onChange={handleImageChange}
                   />                  
@@ -129,11 +141,11 @@ function Create({isAuthenticated}) {
                 </div>
                 <div className="categorySelect flexRow">
                   <label for="cat"> Category:</label>
-                  <select id="cat" name="cars" onChange={setText}>
+                  <select id="cat" name="category" onChange={setText}>
                     <option value="Technology">Technology</option>
                     <option value="Economy">Economy</option>
                     <option value="Leadership">Leadership</option>
-                    <option value="Moral Philosophy">Moral Philosophy</option>
+                    <option value="Philosophy">Philosophy</option>
                     <option value="Marketing">Marketing</option>
                     <option value="Human Resource">Human Resource</option>
                     <option value="Operations">Operations</option>
@@ -155,7 +167,7 @@ function Create({isAuthenticated}) {
             </div>
           </div>
 
-          <button type="submit" className="writeSubmit" onClick={handleSubmit}>
+          <button type="submit" className="writeSubmit">
             Publish 
           </button>
         </form>

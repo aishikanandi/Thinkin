@@ -17,14 +17,15 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
   useEffect(() => {
     setTimeOut(()=>{
     const requests = cats.map((cat) => {
-      return axios.get(`http://localhost:5000/api/posts?cat=${cat.name}`);
+      return axios.get(`http://localhost:5000/api/posts?category=${cat.name}`);
     });
     Promise.all(requests)
       .then((responses) => {
         const newCatCount = {};
-
+        
         responses.forEach((response, index) => {
           newCatCount[cats[index].name] = response.data.length;
+          console.log(response.data.length)
         });
 
         setCatCount(newCatCount);
@@ -61,8 +62,8 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
   <div className="carousel-inner" role="listbox">
     {posts.map((post, index) => (
       <div key={index} className={`item ${index === 0 ? "active" : ""}`}>
-        <img src="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/04/11111857/f33e3a56b71ea9375b188e0bf5f8aa21.jpg" alt={post.title} />
-        <Link to={`/${post.category}`} className="Link">
+        <img src={URL.createObjectURL(new Blob([new Uint8Array(post.image.data.data)], { type: 'image/png' }))} alt={post.title} />
+        <Link to={`/${post.title}`} className="Link">
           <div className="carousel-caption d-none d-md-block">
             <h5>{post.title}</h5>
             <h6 className="ccaption">{post.description}</h6>
@@ -94,7 +95,7 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
       <div key={index} class="card4articles">
       <Link to={`/${cat.name}`} className='Link'><div class={`childArticle ${cat.name}`} >
       <h2>{splitCamelCase(cat.name)}</h2>
-      <p>{`${catCount[cat.name]} articles`}</p>
+      <p>{`${catCount[cat.name]?catCount[cat.name]:0} articles`}</p>
         </div></Link>
       </div>
     ))
