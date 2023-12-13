@@ -10,6 +10,43 @@
     
   }
   
+  .Economy{
+    background-image: url("../images/economy.jpeg");
+    background-size: cover;
+  }
+  .Technology{
+    background-image: url("../images/technology.jpg");
+    background-size: cover;
+  }
+  .Operations{
+    background-image: url("../images/operations.jpg");
+    background-size: cover;
+  }
+  .Human{
+    background-image: url("../images/humanResource.jpg");
+    background-size: cover;
+  }
+  .Strategy{
+    background-image: url("../images/strategy.jpg");
+    background-size: cover;
+  }
+  .Finance{
+    background-image: url("../images/finance.png");
+    background-size: cover;
+  }
+  .Marketing{
+    background-image: url("../images/marketing.jpg");
+    background-size: cover;
+  }
+  .Leadership{
+    background-image: url("../images/leadership.jpg");
+    background-size: cover;
+  }
+  .Philosophy{
+    background-image: url("../images/philosophy.jpg");
+    background-size: cover;
+    
+  } 
   .item {
     height: 500px;
     width: 100%;
@@ -201,43 +238,43 @@ position: absolute;
     transform: translate(var(--translate), var(--translate));
     z-index: 5;
   }
-  .economy{
+  .Economy{
     background-image: url("../images/economy.jpeg");
     background-size: cover;
   }
-  .technology{
+  .Technology{
     background-image: url("../images/technology.jpg");
     background-size: cover;
   }
-  .operations{
+  .Operations{
     background-image: url("../images/operations.jpg");
     background-size: cover;
   }
-  .humanResource{
+  .Human{
     background-image: url("../images/humanResource.jpg");
     background-size: cover;
   }
-  .strategy{
+  .Strategy{
     background-image: url("../images/strategy.jpg");
     background-size: cover;
   }
-  .finance{
+  .Finance{
     background-image: url("../images/finance.png");
     background-size: cover;
   }
-  .marketing{
+  .Marketing{
     background-image: url("../images/marketing.jpg");
     background-size: cover;
   }
-  .leadership{
+  .Leadership{
     background-image: url("../images/leadership.jpg");
     background-size: cover;
   }
-  .philosophy{
+  .Philosophy{
     background-image: url("../images/philosophy.jpg");
     background-size: cover;
     
-  }
+  } 
   .childArticle:nth-child(1) {
     --offset: 0;
     z-index: 4;
