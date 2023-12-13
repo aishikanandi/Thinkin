@@ -3,22 +3,13 @@ import React, {useState, useEffect} from 'react';
 import Home from './pages/home/home.jsx';
 import About from './pages/About/about.jsx';
 import Footer from './footer/footer.jsx';
-import Marketing from './pages/home/marketing/marketing.jsx';
-import Economy from './pages/home/economy/economy.jsx';
-import HR from './pages/home/HumanResource/HR.jsx';
-import Strategy from './pages/home/Strategy/Strategy.jsx';
-import Operations from './pages/home/Operations/Operations.jsx';
-import Finance from './pages/home/Finance/Finance.jsx';
-import Leadership from './pages/home/Leadership/leadership.jsx';
-import MoralPhilosophy from './pages/home/Moral philosophy/moralphilosophy.jsx';
-import Technology from './pages/home/Technology/technology.jsx';
+import Template from './pages/home/Template/Template.jsx';
 import Single from './pages/home/single/single.jsx'
 import Signup from './pages/Signup/signup.jsx'
 import Author from './pages/Signup/author.jsx'
 import Reader from './pages/Signup/reader.jsx'
 import Create from './pages/home/create/create.jsx'
 import {HashRouter, Routes, Route } from "react-router-dom";
-import { useLocation} from "react-router-dom";
 import axios from 'axios';
 
 function App() {
@@ -72,30 +63,23 @@ function App() {
         <Routes>
         <Route exact path='' element={ <Home posts={posts} cats={cats} isAuthenticated={isAuthenticated}/>}/>
           <Route exact path='about' element={ <About/>}/>
-          <Route exact path='marketing' element={<Marketing posts={posts}/>} />
-          <Route exact path='humanResource' element={<HR posts={posts}/>} />
-          <Route exact path='economy' element={<Economy posts={posts}/>} />
-          <Route exact path='leadership' element={<Leadership posts={posts}/>} />
-          <Route exact path='philosophy' element={<MoralPhilosophy posts={posts}/>} />
-          <Route exact path='technology' element={<Technology posts={posts}/>} />
-          <Route exact path='strategy' element={<Strategy posts={posts}/>} />
-          <Route exact path='operations' element={<Operations posts={posts}/>} />
-          <Route exact path='finance' element={<Finance posts={posts}/>} />
-          {/* <Route exact path='tech3' element={<Tech3/>} />
-          <Route exact path='tech4' element={<Tech4/>} />
-          <Route exact path='eco1' element={<Eco1/>} />
-          <Route exact path='eco2' element={<Eco2/>} />
-          <Route exact path='eco4' element={<Eco4/>} />
-          <Route exact path='mark1' element={<Mark1/>} />
-          <Route exact path='mark2' element={<Mark2/>} />
-          <Route exact path='mark3' element={<Mark3/>} /> */}
+          <Route exact path='marketing' element={<Template posts={posts} cate={"Marketing"}/>} />
+          <Route exact path='Human Resource' element={<Template posts={posts} cate={"Human Resource"}/>} />
+          <Route exact path='economy' element={<Template posts={posts} cate={"Economy"}/>} />
+          <Route exact path='leadership' element={<Template posts={posts} cate={"Leadership"}/>} />
+          <Route exact path='philosophy' element={<Template posts={posts} cate={"Philosophy"}/>} />
+          <Route exact path='technology' element={<Template posts={posts} cate={"Technology"}/>} />
+          <Route exact path='strategy' element={<Template posts={posts} cate={"Strategy"}/>} />
+          <Route exact path='operations' element={<Template posts={posts} cate={"Operations"}/>} />
+          <Route exact path='finance' element={<Template posts={posts} cate={"Finance"}/>}/>
           {posts.map((post, index) => {
             return <Route exact path={`/${post.title}`} element={<Single title={post.title} description ={post.description} date={post.date.slice(0,10)} imageUrl={post.image} />} key={index} />;
           })}
           <Route exact path='author' element={<Author updateIsAuthenticated={updateIsAuthenticated}/>} />
           <Route exact path='signup' element={<Signup/>} />
           <Route exact path='reader' element={<Reader/>} />
-          <Route exact path='create' element={<Create/>} />
+          <Route path="create" element={<Create  isAuthenticated={isAuthenticated} />}/>
+          
         </Routes>
       
       </HashRouter>

@@ -29,7 +29,7 @@ export default function header() {
           <li className='Link header' style={{color: 'black'}}>Business <span>&#9660;</span>
             <ul class="dropdown">
               <li><Link to="/marketing" className='Link header' style={{color: 'black'}}>Marketing</Link></li>
-              <li><Link to="/humanResource" className='Link header' style={{color: 'black'}}>Human Resource</Link></li>
+              <li><Link to="/Human Resource" className='Link header' style={{color: 'black'}}>Human Resource</Link></li>
               <li><Link to="/operations" className='Link header' style={{color: 'black'}}>Operations</Link></li>
               <li><Link to="/strategy" className='Link header' style={{color: 'black'}}>Strategy</Link></li>
               <li><Link to="/finance" className='Link header' style={{color: 'black'}}>Finance</Link></li>
