@@ -1,16 +1,24 @@
 import '../pages.css'
 import Header from '../../../header/header.jsx';
 import Post from '../../../post/post.jsx';
+import {useState} from 'react';
+
 
 import React from 'react';
 function Marketing({posts, cate}) {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImagesLoaded(true);
+  };
+
   console.log(posts.filter(p => p.category[0] === cate))
   if(!posts||!(posts.some(p => p.category[0] === cate))){
     return (
       <div>
         <Header/>
         
-        <div className="pagePosts noPosts">
+        <div className="noPosts">
           <h5 className="pageTitle">{cate.toUpperCase()}</h5>
            <br />
             <img class="gif" src={require("../../../images/75WF.gif")} alt="" />
@@ -22,6 +30,7 @@ function Marketing({posts, cate}) {
   return (
     <div className='businessPage'>
         <Header/>
+
         <h5 className="pageTitle">{cate}</h5>
         <div className="pagePosts">
         {posts.map((p, index) => {
@@ -30,11 +39,12 @@ function Marketing({posts, cate}) {
               <div className='postLink'>
                 <Post
                   date={p.date.slice(0,10)}
-                  imageUrl={p.image.data.data}
+                  imageUrl={`http://localhost:5000/images/${p.image}`}
                   category={p.category[0][0].toUpperCase()+p.category[0].slice(1)}
                   title={p.title}
                   content={p.description}
                   id={p._id}
+                  onLoad={handleImageLoad}
                 />
               </div>
             );

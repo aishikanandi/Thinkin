@@ -7,13 +7,22 @@
 }
 
 .noPosts{
-    min-height: 450px;
+    margin: 2%;
+    margin-top: 2%!important;
+    display: flex;
+    flex-direction: column;
+    min-height: 550px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
 }
 .divider{
 visibility: hidden;
 }
 h5.textNoPage{
-    margin: auto !important;
+    margin-top: 5rem ;
     font-family: 'Noto Sans SC', sans-serif;
     font-size: x-large;
     color:rgba(184, 44, 16, 0.8);
@@ -25,44 +34,56 @@ h5.pageTitle{
     font-weight: bolder;
     color: rgba(184, 44, 16, 0.8);
     text-align: center;
-    margin: auto !important;
-    padding-top: 4%;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-    margin-top: 0% !important;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem !important;
+    margin-top: 3% !important;
 }
 .gif{
-    margin-left: 22%;
-    margin-right: 50%;
-    width: 70%;
+    width: 30rem;
+}
+
+@media only screen and (max-width: 1090px) {
+    .pagePosts{
+        margin: 5% 0;
+        padding: 0% !important;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .textNoPage{
+        font-size:medium !important;
+    }
+    h5.textNoPage{
+        margin: 3rem 0 !important;
+    }
+}
+@media only screen and (max-width: 800px) {
+    h5.textNoPage{
+        margin: 1rem 0 !important;
+    }
+    .noPosts{
+        min-height: 400px;
+        margin-top: 0% !important;
+        margin-bottom: 80% !important;
+    }
+   
+    
 }
 @media only screen and (max-width: 480px) {
 
-    .noPosts{
-        min-height: 550px;
-    }
+    
+    
      
-    .textNoPage{
-        margin: 20% 10% 0% 10%;
-padding-left: 0% !important;
-        font-family: 'Noto Sans SC', sans-serif;
-        font-size: large;
-        color:brown;
-        height: 10% !important;
-    } 
+    
     .gif{
-        position: relative;
-        top: -50px;
-        margin-left: 15%;
         width: 80%;
     } 
     h5.pageTitle{
-        font-family: 'Bebas Neue', cursive;
-        font-size: 180%;
-        font-weight: bolder;
-        color: rgba(184, 44, 16, 0.8);
-        margin: auto !important;
-        margin-top: 3% !important;
+        margin: 0 !important;
+        margin-top: 0% !important;
+        margin-bottom: 0% !important;
     }
     .divider{
         visibility: visible;
@@ -72,4 +93,27 @@ padding-left: 0% !important;
         color: rgb(153, 147, 147);
         border-width: 0.1em;
     }
+    .pagePosts{
+        margin: 0%;
+        padding: 0;
+        
+    }
+}
+@media only screen and (max-width: 520px) {
+
+h5.pageTitle{
+    padding-top: 5rem !important;
+}
+
+.textNoPage{
+    padding-left: 0% !important;
+            font-family: 'Noto Sans SC', sans-serif;
+            
+            color:brown;
+           
+        } 
+.noPosts{
+    padding:0 8%;
+}
+
 }

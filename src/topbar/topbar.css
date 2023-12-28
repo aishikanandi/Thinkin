@@ -99,14 +99,16 @@ nav.primary-navigation1 {
       min-height: 20px !important;
     }
     nav.primary-navigation1 {
-      margin: 0 auto;
+      margin: 0;
       padding-top: 9px;
       padding-bottom: 5px;
+      font-size: 13px;
     }
-    .topList{
-      margin-right: 80px;
-    }
+    
     nav.primary-navigation1 ul li {
       padding-right: 5px;
+    }
+    nav.primary-navigation1 ul{
+      padding: 0 !important;
     }
   }

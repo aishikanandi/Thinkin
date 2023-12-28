@@ -74,16 +74,34 @@
     -webkit-box-orient: vertical;
     
 }
+
+@media only screen and (max-width: 1090px) {
+    .post{
+        margin: 0% !important;
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .post{
+        margin: 0% !important;
+        width: 330px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .post{
-        width: 95%;
-        margin: 2% 2% 0% 4%;
-        border-style: none ;
-        padding: 0% 2% 2% 2%;
-        
+        width: 300px;
+        min-height: 28em !important;
+        padding: 0% 2% 4% 2%;
+        margin-top: 3%!important;
+        border-color: gainsboro;
+        border-style:dashed;
+        border-width: 2px;
     }
-    .postLink{
-        margin-left: 0%;
+
+    .postDesc{
+        visibility: hidden;
     }
     .post:hover{
         -webkit-transform: scale(1.0);
@@ -92,4 +110,12 @@
         -o-transform: scale(1.0);
         transform: scale(1.0);
         }
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .post{
+        width: 270px;
+        border-style: none;
+    }
 }

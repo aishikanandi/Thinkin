@@ -7,13 +7,13 @@
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
     .cont {
         /* it place the items in vertical direction */
       flex-direction: column;
     }
   
     .box2 {
-      margin: 0 0 1rem;
+      margin: 0 0 0;
     }
   }

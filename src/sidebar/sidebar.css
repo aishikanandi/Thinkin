@@ -71,20 +71,32 @@
     width:80%;
     height:auto;
 }
-@media only screen and (max-width: 480px) {
-    .shrink img {
-        filter: grayscale(0%);
-      -webkit-filter: grayscale(0%);
-      -moz-filter: grayscale(0%);
-        }
-    .shrink img:hover{
+
+@media only screen and (max-width: 1000px) {
+.author .words{
+    font-size: large;
+}
+.photo{
+    margin: 4%;
+}
+.author .sidebarTitle{
+    font-size: 3em;
+}
+.cardTitle{
+    font-size: 2.7em;
+}
+}
+
+@media only screen and (max-width: 580px) {
+    
+    .shrink img{
         filter: grayscale(100%);
     }
     .photo{
         margin-top: 4%;
     }
     .photography{
-        margin: 3% 2% 3% 1%;
+        margin: 3% 8% 3% 1%;
         width:100%;
         height:auto;
         

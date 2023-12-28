@@ -106,16 +106,24 @@ ul li ul li {
 
 @media only screen and (max-width: 1090px) {
   .Navigation {
+    padding-top: 0%;
+    margin-top: 0;
+    padding-bottom: 1%;
     display: flex;
     justify-content: center;
+
   }
   
   .primary-navigation {
     display: flex;
     flex-wrap: wrap;
+    
+  }
+  nav.primary-navigation{
+    font-size: 17px;
   }
   .Type-writer{
-    padding-bottom: 7%;
+    padding-bottom: 2%;
   }
   .logo{
     padding-top: 6%;
@@ -150,8 +158,14 @@ ul li ul li {
 .primary-navigation ul li:hover{
   color: white;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .Navigation{
     display: none;
+  }
+  .Type-writer{
+    padding-bottom: 8%;
+  }
+  .logo{
+    padding-top: 10%;
   }
 }

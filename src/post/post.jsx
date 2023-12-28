@@ -18,14 +18,14 @@ function Post({ date, imageUrl, category, title, content, id, onDelete }) {
     }
   };
 
-  const uint8Array = new Uint8Array(imageUrl);
-  const blob = new Blob([uint8Array], { type: 'image/png' });
-  const imageurl = URL.createObjectURL(blob);
+  // const uint8Array = new Uint8Array(imageUrl);
+  // const blob = new Blob([uint8Array], { type: 'image/png' });
+  // const imageurl = URL.createObjectURL(blob);
 
   return (
     <div className='post' style={{ '--post': '1', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'  }}>
        <>
-      <Link to={`/${title}`}><img className='postImage' src={imageurl} alt="" /></Link>
+      <Link to={`/${title}`}><img className='postImage' src={imageUrl} alt="" /></Link>
       
       <div className="postInfo">
      

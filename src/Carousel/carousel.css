@@ -159,6 +159,9 @@ position: absolute;
     .item {
       flex-basis: 100%; /* 2 columns on smaller screens */
     }
+    .card4articles{
+      width: 100% !important;
+    }
   }
   
   @media only screen and (max-width: 480px) {
@@ -181,7 +184,15 @@ position: absolute;
       margin-top: 7%;
       margin-bottom: 1%;
     }
-    
+    .item::after{
+      display: block;
+  position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    margin-top: -250px;
+    height: 250px;
+    width: 100%;
+    content: '';
+    }
     .carousel-caption h5 {
       font-size: small;
       margin-top: 0%;

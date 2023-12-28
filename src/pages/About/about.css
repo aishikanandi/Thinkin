@@ -9,11 +9,18 @@
 @media only screen and (max-width: 480px) {
     .aboutContent{
         margin: 5% 7%;
-        font-size: small !important;
+        font-size: medium !important;
     }
     .writingGif{
         width: 60%;
         margin-left: 21%;
         margin-top: 0%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .writingGif{
+        width: 55%;
+        margin-left: 20%;;
     }
 }

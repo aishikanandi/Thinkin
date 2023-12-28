@@ -36,7 +36,7 @@
     margin: auto;
     width: 100%;
 }
-textarea{
+.writeRight textarea{
     min-height: 50em;
     margin-top: 2em;
 }

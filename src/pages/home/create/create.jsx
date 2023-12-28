@@ -19,12 +19,11 @@ function Create({isAuthenticated}) {
   const setText = (e) => {
     const { name, value } = e.target;
     setArticleData({ ...articleData, [name]: value });
-    console.log("set: ", name, value)
   };
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    console.log(file);
+    // console.log(file);
     setArticleData({ ...articleData, image: file });
     const fileInput = document.getElementById("fileInput");
 
@@ -32,8 +31,8 @@ function Create({isAuthenticated}) {
       setImageSubmitted(true);
 
       // Log the selected image
-      const selectedImage = fileInput.files[0];
-      console.log("Selected Image:", selectedImage);
+      // const selectedImage = fileInput.files[0];
+      // console.log("Selected Image:", selectedImage);
     } else {
       setImageSubmitted(false);
     }
@@ -66,7 +65,7 @@ function Create({isAuthenticated}) {
       });
     } catch (error) {
       console.error('Error posting article:', error);
-  console.log("Request Data:", articleData);
+  // console.log("Request Data:", articleData);
     }
   };
 

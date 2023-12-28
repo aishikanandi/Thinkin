@@ -17,15 +17,15 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
   useEffect(() => {
     setTimeOut(()=>{
     const requests = cats.map((cat) => {
-      return axios.get(`http://localhost:5000/api/posts?category=${cat.name}`);
+      return axios.get(`http://localhost:5000/api/posts?cat=${cat.name}`);
     });
     Promise.all(requests)
       .then((responses) => {
         const newCatCount = {};
-        
+        // console.log(responses)
         responses.forEach((response, index) => {
           newCatCount[cats[index].name] = response.data.length;
-          console.log(response.data.length)
+          // console.log(response.data)
         });
 
         setCatCount(newCatCount);
@@ -58,12 +58,13 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
       ></li>
     ))}
   </ol>
-
+  {/* URL.createObjectURL(new Blob([new Uint8Array(post.image.data.data)], { type: 'image/png' })) */}
   <div className="carousel-inner" role="listbox">
     {posts.map((post, index) => (
       <div key={index} className={`item ${index === 0 ? "active" : ""}`}>
-        <img src={URL.createObjectURL(new Blob([new Uint8Array(post.image.data.data)], { type: 'image/png' }))} alt={post.title} />
         <Link to={`/${post.title}`} className="Link">
+        <img src={`http://localhost:5000/images/${post.image}`} alt={post.title} />
+        
           <div className="carousel-caption d-none d-md-block">
             <h5>{post.title}</h5>
             <h6 className="ccaption">{post.description}</h6>

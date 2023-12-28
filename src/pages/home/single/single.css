@@ -5,6 +5,9 @@
    text-align: center;
  }
  
+ .Title{
+   font-size:xxx-large !important;
+}
 .postIm{
 width: 100%;
 padding: 5%;
@@ -21,12 +24,13 @@ padding-bottom: 3%;
     color: rgba(184, 44, 16, 0.8);
    font-weight: bolder;
    margin: 0%;
-   margin-top: 1%;
+   margin-top: 2%;
    }
    h5 + h5{
       margin-top: -0.1%;
    }
    .postContent{
+      margin-top: 4rem !important;
       font-family: 'Varela round', sans-serif;
       line-height: 180%;
       font-size: large;
@@ -47,13 +51,19 @@ padding-bottom: 3%;
           }
           .postContent{
             font-family: 'Varela round', sans-serif;
-            line-height: 180%;
-            font-size: small;
+            font-size: medium;
             
          }.postDetails{
             font-size: small;
+            margin-top: 2%;
          }
-         h1.Title{
-            font-size: 180%;
+         .Title{
+            font-size:xx-large !important;
          }
+         h5 + h5{
+            margin-top: -2%;
+         }
+   }
+   .forum-comments{
+      margin: 5%;
    }
