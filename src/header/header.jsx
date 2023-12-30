@@ -7,9 +7,9 @@ export default function header() {
 
   return (
     <div className='bg'>
-      <div className='logo'>
+      <Link to="/" style={{textDecoration:"none"}}><div className='logo'>
         <h1>THINKIN</h1>
-      </div>
+      </div></Link>
       <div className='Type-writer'>
       <Typed
       strings={[

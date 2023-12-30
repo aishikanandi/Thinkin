@@ -9,6 +9,7 @@
     width: 100%;
 }
 .flexRow{
+  margin-top: 1%;
     display: flex;
     flex-direction: row;
 }
@@ -76,9 +77,11 @@ input[type="date"], #cat{
     border-width: 0.2em !important;
     border-style: dashed !important;
     padding: 1.5em !important;
+    
   }
-#cat{
+.mandate-date #cat{
     width: 40%;
+    cursor: pointer;
     background-color: white !important;
 }
   label[for="postDate"], label[for="cat"], label[for="fileInput"] {
@@ -95,17 +98,20 @@ input[type="date"], #cat{
   .imageSelect{
     justify-content: center;
       align-items: center;
-    width: 33.33%;
+    width: 40%;
   }
   .calendarDiv{
     justify-content: center;
       align-items: center;
-    width: 33.33%;
+    width: 100%;
   }.categorySelect{
-    width: 33.33%;
+    width: 100%;
     justify-content: center;
       align-items: center;
   }
- 
-  
+  .mandate-date{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+  }
   

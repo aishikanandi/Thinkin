@@ -1,11 +1,11 @@
 .single {
    width: 100%;
    height: auto; /* set the height of the container */
-   
    text-align: center;
  }
  
  .Title{
+ padding: 0 4rem;
    font-size:xxx-large !important;
 }
 .postIm{
@@ -42,6 +42,13 @@ padding-bottom: 3%;
       font-size: xx-large;
       
    }
+    @media only screen and (max-width: 600px) {
+   .Title{
+            font-size:xx-large !important;
+         }
+         .postContent{
+      margin-top: 0rem !important;
+         }}
    @media only screen and (max-width: 480px) {
       .postIm{
          width: 100%;
@@ -57,9 +64,7 @@ padding-bottom: 3%;
             font-size: small;
             margin-top: 2%;
          }
-         .Title{
-            font-size:xx-large !important;
-         }
+         
          h5 + h5{
             margin-top: -2%;
          }

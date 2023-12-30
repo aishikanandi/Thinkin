@@ -2,12 +2,12 @@ import './post.css';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import axios from 'axios';
-
-function Post({ date, imageUrl, category, title, content, id, onDelete }) {
+import {BASE_URL} from '../pages/home/single/helper.js'
+function Post({ date, imageUrl, category, title, content, id, onDelete, isAuthenticated }) {
   const handleDelete = async () => {
     try {
       // Make a DELETE request to your API
-      await axios.delete(`http://localhost:5000/api/posts/${id}`);
+      await axios.delete(`${BASE_URL}/api/posts/${id}`);
       
       // Call the onDelete function passed as a prop
       onDelete(id);
@@ -47,12 +47,12 @@ function Post({ date, imageUrl, category, title, content, id, onDelete }) {
         <>
         <div className='Date' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: "Auto" }}>
           <span className="postDate" style={{ color: "rgb(85, 79, 79, 0.8)" }}>{date}</span>
-          <img
+          {isAuthenticated&&<img
             style={{ height: "20px", marginLeft: 'auto', cursor: "pointer" }}
             src={require("../images/bin.png")}
             alt=""
             onClick={handleDelete}
-          />
+          />}
         </div>
         </>
       

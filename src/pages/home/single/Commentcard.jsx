@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import moment from "moment";
 import axios from "axios";
 import './comments.css';
-
+import {BASE_URL} from '../single/helper.js'
 const CommentCard = ({ comments, id }) => {
   const [newComment, setNewComment] = useState("");
   const [newUser, setNewUser] = useState("");
-  
+  const [showAllComments, setShowAllComments] = useState(false);
+
+  // Display only the first three comments initially
+  const displayedComments = showAllComments ? comments : comments.slice(0, 3);
+
 
   const handleCommentChange = (event) => {
     setNewComment(event.target.value);
@@ -21,12 +25,11 @@ const CommentCard = ({ comments, id }) => {
       text: newComment
       
     };
-    console.log(simulatedServerResponse)
-    const apiEndpoint = `http://localhost:5000/api/posts/${id}`;
+    
+    const apiEndpoint = `${BASE_URL}/api/posts/${id}`;
 
     axios.put(apiEndpoint, { comments: simulatedServerResponse })
       .then((response) => {
-        console.log("Comment submitted successfully:", response.data);
         window.location.reload();
 
       })
@@ -41,7 +44,7 @@ const CommentCard = ({ comments, id }) => {
       <div className="cate">
 <h5>COMMENTS?</h5>
 </div>
-    <div class="SPForum-Comments">
+    <div class="SPForum-Comments ">
   <input
     type="text"
     class="SPForum-Comment-Input"
@@ -59,9 +62,8 @@ const CommentCard = ({ comments, id }) => {
     Submit Comment
   </button>
 </div>
-
-    {comments.map((c, index) => (
-      <div className="forum-post-card" key={index}>
+      {displayedComments.map((c, index) => (
+        <div className="forum-post-card" key={index}>
         <div className="forum-post-header">
           <div className="forum-user-info">
             <img
@@ -91,8 +93,14 @@ const CommentCard = ({ comments, id }) => {
           </div>
         </div>
       </div>
-    ))}
-  </div>
+      ))}
+
+      {/* Render "Read More" button if there are more than three comments */}
+      {comments.length > 3 && !showAllComments && (
+        <div className="read-more parent-read"><h4 className="read-more-button read-overlay" onClick={() => setShowAllComments(true)}><p style={{zIndex:"100"}}>Read More</p></h4></div>
+      )}
+    </div>
+
   );
 };
 

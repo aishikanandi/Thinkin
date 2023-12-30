@@ -9,7 +9,6 @@ export function Topbar({isAuthenticated} ) {
           <ul>
             <li><Link to="/" style={{ color: 'black', textDecoration: 'none'}}>Home</Link></li>
             <li><Link to="/about" style={{ color: 'black', textDecoration: 'none' }}>About</Link></li>
-            <li><Link to="/signup" style={{ color: 'black', textDecoration: 'none'}}>Sign up</Link></li>
             {isAuthenticated && (
           
             <li><Link to="/create" style={{ color: 'black', textDecoration: 'none'}}>New Post</Link></li>

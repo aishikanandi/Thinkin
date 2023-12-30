@@ -53,7 +53,7 @@
     color:  black !important;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center; 
-    margin-top: 3%;
+    padding-top: 1rem;
 }
 .postTitle{
     color:  black !important;
@@ -99,10 +99,14 @@
         border-style:dashed;
         border-width: 2px;
     }
-
-    .postDesc{
-        visibility: hidden;
-    }
+.postDesc{
+font-size:small;
+color: grey !important;
+margin-bottom: 1em;
+padding-left: 1em;
+padding-right: 1em; 
+}
+    
     .post:hover{
         -webkit-transform: scale(1.0);
         -moz-transform: scale(1.0);

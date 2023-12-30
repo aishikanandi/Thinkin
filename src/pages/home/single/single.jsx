@@ -5,7 +5,7 @@ import CommentCard from './Commentcard.jsx';
 
 function Single({title, description, date, imageUrl, comments, id}) {
   const formattedDescription = description.replace(/\r\n/g, '<br>');
-  console.log(id)
+  
   return (
     <div>
     <Header/>

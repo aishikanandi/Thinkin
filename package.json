@@ -1,5 +1,5 @@
 {
-  "homepage": "https://aishikanandi.github.io/Thinkin",
+  "homepage": "/",
   "name": "thinkin",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.0",
     "body-parser": "^1.20.2",
+    "cloudinary": "^1.41.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "ejs": "^3.1.9",

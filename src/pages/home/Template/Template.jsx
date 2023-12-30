@@ -2,20 +2,19 @@ import '../pages.css'
 import Header from '../../../header/header.jsx';
 import Post from '../../../post/post.jsx';
 import {useState} from 'react';
-
+import {BASE_URL} from '../single/helper.js'
 
 import React from 'react';
-function Marketing({posts, cate}) {
+function Marketing({posts, cate, isAuthenticated}) {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   const handleImageLoad = () => {
     setImagesLoaded(true);
   };
 
-  console.log(posts.filter(p => p.category[0] === cate))
   if(!posts||!(posts.some(p => p.category[0] === cate))){
     return (
-      <div>
+      <div style={{minHeight: "120vh"}}>
         <Header/>
         
         <div className="noPosts">
@@ -28,7 +27,7 @@ function Marketing({posts, cate}) {
     )}
     
   return (
-    <div className='businessPage'>
+    <div className='businessPage' style={{minHeight: "120vh"}}>
         <Header/>
 
         <h5 className="pageTitle">{cate}</h5>
@@ -39,12 +38,13 @@ function Marketing({posts, cate}) {
               <div className='postLink'>
                 <Post
                   date={p.date.slice(0,10)}
-                  imageUrl={`http://localhost:5000/images/${p.image}`}
+                  imageUrl={p.image}
                   category={p.category[0][0].toUpperCase()+p.category[0].slice(1)}
                   title={p.title}
                   content={p.description}
                   id={p._id}
                   onLoad={handleImageLoad}
+                  isAuthenticated={isAuthenticated}
                 />
               </div>
             );

@@ -63,14 +63,17 @@ position: absolute;
   }
   .carousel-caption h5{
     font-size: 210%;
-    color: rgb(24, 21, 21);
-    text-align: center;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: bold;
-    line-height: 160%;
-    cursor: pointer;
-    margin-bottom: 0%;
+  color: rgb(24, 21, 21);
+  text-align: center;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
+  line-height: 160%;
+  cursor: pointer;
+  margin-bottom: 0%;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 1);
   }
+  .carousel-caption h5 {
+    font-size: x-large;}
   .ccaption{
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
@@ -98,7 +101,7 @@ position: absolute;
     font-weight: bolder;
     color: rgba(184, 44, 16, 0.8);
     
-    margin: 2% auto 1% auto;
+    margin: 4% auto 1% auto;
   }
   .cate h5{
     font-family: 'Bebas Neue', cursive;
@@ -154,13 +157,23 @@ position: absolute;
     box-sizing: border-box;
     
   }
-  
+  @media only screen and (max-width: 1400px) {
+  .carousel-caption h5 {
+    font-size: large;}}
   @media only screen and (max-width: 768px) {
     .item {
       flex-basis: 100%; /* 2 columns on smaller screens */
     }
     .card4articles{
       width: 100% !important;
+    }
+    .item::after{
+      display: block;
+  position: absolute;
+    background-image: none;}
+    .carousel-caption h5 {
+      overflow: hidden;
+      text-overflow: ellipsis ;
     }
   }
   
@@ -169,12 +182,12 @@ position: absolute;
       flex-basis: 100%; /* 1 column on even smaller screens */
       
     }
-    .carousel1{
+    /* .carousel1{
       padding-top: 3%;
     }
     .carousel-inner{
       padding-bottom: 18%;
-    }
+    } */
     .recentBlog h5{
       font-size: 180%;
     }
@@ -185,19 +198,21 @@ position: absolute;
       margin-bottom: 1%;
     }
     .item::after{
-      display: block;
-  position: absolute;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
     margin-top: -250px;
     height: 250px;
     width: 100%;
     content: '';
     }
     .carousel-caption h5 {
-      font-size: small;
-      margin-top: 0%;
+      font-size: 110%;
       position: relative;
-      top: 74px;
+      top: 0px;
+    }
+    
+    .item{
+      padding: 0 !important;
+    margin-left: 0 !important;
+      width: 100%;
     }
     .card4articles {
       flex: 1 1 100%; /* initially 3 columns */
@@ -226,12 +241,7 @@ position: absolute;
     .philosophy{
       width: 100% !important;
     }
-    .tech{
-      background-image: url("../images/technology.jpg") !important;
-    }
-    .leadership{
-      background-image: url('../images/leadership.jpg') !important;
-    }
+    
   }
 
   

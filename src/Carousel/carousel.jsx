@@ -2,7 +2,7 @@ import './carousel.css'
 import {Link} from "react-router-dom"
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
-
+import {BASE_URL} from '../pages/home/single/helper.js'
 function splitCamelCase(input) {
   if(input.length==1)return input[0].toUpperCase(); else if(input.length>1) {return input[0].toUpperCase() + input.replace(/([A-Z])/g, ' $1').trim().slice(1)};
 }
@@ -12,12 +12,12 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
   const [loading, setTimeOut] = useState(true);
   
     posts = posts.slice(Math.max(posts.length - 5, 0));
-    
+    posts.reverse();
 
   useEffect(() => {
     setTimeOut(()=>{
     const requests = cats.map((cat) => {
-      return axios.get(`http://localhost:5000/api/posts?cat=${cat.name}`);
+      return axios.get(`${BASE_URL}/api/posts?cat=${cat.name}`);
     });
     Promise.all(requests)
       .then((responses) => {
@@ -39,11 +39,15 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
   
 
   if(loading){
-    return <>Loading...Please Wait</>
+    return <div>
+    <div className="noPosts">
+      <img class="gif" src={require('../images/75WF.gif')} alt="" />
+    </div>
+  </div>
   }
   return (
     <div className='carousel1'>
-      <div className="onlyCarousel">
+      {posts.length!==0? <div className="onlyCarousel">
       <div className="recentBlog">
     {isAuthenticated && <h5>MY POSTS</h5> } {!(isAuthenticated) &&<h5>MISSED MY RECENT BLOGS?</h5>}
     </div>   
@@ -63,11 +67,10 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
     {posts.map((post, index) => (
       <div key={index} className={`item ${index === 0 ? "active" : ""}`}>
         <Link to={`/${post.title}`} className="Link">
-        <img src={`http://localhost:5000/images/${post.image}`} alt={post.title} />
+        <img src={post.image} alt={post.title} />
         
           <div className="carousel-caption d-none d-md-block">
             <h5>{post.title}</h5>
-            <h6 className="ccaption">{post.description}</h6>
           </div>
         </Link>
       </div>
@@ -84,7 +87,11 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
   </a>
 </div>
 
-      </div>
+      </div>: <div className="recentBlog"><h5>MISSED MY RECENT BLOGS?</h5><div className="noPosts">
+      
+      <img class="gif" src={require('../images/75WF.gif')} alt="" />
+      <h5 className="textNoPage">I'm still THINKIN! Come back later!</h5>
+    </div></div>}
    
 
 <div className="cate">

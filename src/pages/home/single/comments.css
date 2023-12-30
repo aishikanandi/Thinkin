@@ -148,7 +148,7 @@
       font-family: Arial, sans-serif;
       background-color: #fff;
       border-radius: 0.3rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       margin-bottom: 20px;
       overflow: hidden;
       padding: 4%;
@@ -318,3 +318,73 @@
       cursor: pointer;
     }
     
+    .read-more{
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      color: #555;
+      position: relative;
+    }
+
+    .read-more-button{
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    .read-more-button:hover{
+      cursor: pointer;
+      color: #1e338d;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .read-overlay {
+      height: 100px;
+      padding-top: 2%;
+      z-index: -10;
+    }
+    .read-overlay::after{
+      display: block;
+  position: absolute;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+    margin-bottom: 0%;
+    padding-bottom:0% ;
+    }
+    .parent-read{
+      position: relative;
+    }
+
+    @media only screen and (max-width: 580px) {
+      .read-more-button{
+        font-size: 1em;}
+
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+      z-index: 1000; /* Adjust the z-index as needed */
+    }
+    
+    .popupNotification {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 1001; /* Ensure the notification appears above the overlay */
+    }
+    
+    .popupNotification p {
+      margin: 0;
+      color: green; /* Adjust the text color as needed */
+    }

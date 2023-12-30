@@ -2,9 +2,7 @@
     background-color:  rgba(184, 44, 16, 0.8);
     color: white;
     text-align: center;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-    margin-top: 6%;
+    padding: 4% 9% 1% 9%;
     font-weight: bold;
 }
 
@@ -12,9 +10,9 @@
     color: rgba(184, 44, 16, 0.8);
     font-size: 0;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .credits{
-        padding-top: 4%;
+        padding-top: 10%;
         margin-bottom: 0;
         font-size: small;
     }

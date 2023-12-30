@@ -1,16 +1,16 @@
 import './sidebar.css'
 import React from 'react';
-
+import {Link} from "react-router-dom"
 export default function sidebar() {
   return (
     <div className='sideBar'>
         <div className="sidebarItem">
             <div className='author'>
-                <span className="sidebarTitle">
+            <span className="sidebarTitle">
                     AUTHOR
                 </span>
             <br />
-            <img className='photo' src={require("../images/AKN.jpeg")} alt="" />
+            <Link to="/author"><img className='photo' src={require("../images/AKN.jpeg")} alt="" /></Link>
             <br />
             <span className="sidebarTitle name">
                     Ayush Kumar Nandi

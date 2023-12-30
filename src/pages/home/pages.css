@@ -15,18 +15,27 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    margin-bottom: 10% ;
 
 }
+
+.recentBlog .noPosts{
+    min-height: auto !important;
+    padding: 5%;
+    margin:0 !important ;
+    
+}
+
 .divider{
 visibility: hidden;
 }
 h5.textNoPage{
-    margin-top: 5rem ;
+    margin-top: 3rem ;
     font-family: 'Noto Sans SC', sans-serif;
     font-size: x-large;
     color:rgba(184, 44, 16, 0.8);
-
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 } 
 h5.pageTitle{
     font-family: 'Bebas Neue', cursive;
@@ -55,18 +64,27 @@ h5.pageTitle{
     .textNoPage{
         font-size:medium !important;
     }
+    .recentBlog .textNoPage{
+        font-size:x-large !important;
+    }
     h5.textNoPage{
-        margin: 3rem 0 !important;
+        margin: 3rem 0 0 0 !important;
     }
 }
 @media only screen and (max-width: 800px) {
     h5.textNoPage{
-        margin: 1rem 0 !important;
+        margin: 1rem 0 0 0 !important;
     }
     .noPosts{
         min-height: 400px;
         margin-top: 0% !important;
         margin-bottom: 80% !important;
+    }
+    .recentBlog .textNoPage{
+        font-size:1.5em !important;
+    }
+    .recentBlog .noPosts{
+        margin-bottom: 0% !important;padding: 14% 5%;
     }
    
     
@@ -114,6 +132,9 @@ h5.pageTitle{
         } 
 .noPosts{
     padding:0 8%;
+}
+.recentBlog .textNoPage{
+    font-size:large !important;
 }
 
 }
