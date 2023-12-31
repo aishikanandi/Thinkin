@@ -114,4 +114,15 @@ input[type="date"], #cat{
     flex-direction: column;
     width: 33.33%;
   }
-  
+  @media only screen and (max-width: 1200px) {
+    .flexRow{
+      flex-direction: column;
+    }.mandate-date #cat{
+      width: 100%;}
+      .imageSelect{
+        width: 100%;
+      }
+      .mandate-date{
+        width: 100%;
+      }
+  }

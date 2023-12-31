@@ -238,9 +238,6 @@ position: absolute;
       color: rgb(61, 60, 60);
       margin-top: 4%;
     }
-    .philosophy{
-      width: 100% !important;
-    }
     
   }
 
@@ -254,9 +251,7 @@ position: absolute;
     box-sizing: border-box;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px -4px 8px rgba(255, 255, 255, 0.8);
     border-radius: 6px;
-    transition: inherit;
-    --translate: calc(var(--offset) * var(--offset-multiplier));
-    transform: translate(var(--translate), var(--translate));
+    
     z-index: 5;
   }
   .Economy{
@@ -342,11 +337,16 @@ position: absolute;
   }
 
   @media screen and (max-width: 768px) {
+    
     .item {
       height: 250px; /* set a smaller height for smaller screens */
     }
   }
-  
+  @media screen and (max-width: 1000px) {
+  .childArticle{
+    filter: grayscale(0%);
+    color: #000000;
+}}
   @media screen and (max-width: 480px) {
     .item {
       height: 150px; /* set an even smaller height for even smaller screens */

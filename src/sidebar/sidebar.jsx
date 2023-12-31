@@ -1,7 +1,21 @@
 import './sidebar.css'
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom"
-export default function sidebar() {
+import Example from "./example";
+export default function Sidebar() {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+      };
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
   return (
     <div className='sideBar'>
         <div className="sidebarItem">
@@ -25,7 +39,7 @@ export default function sidebar() {
             <br />
             </div>
         </div>
-        <div className="sidebarItem">
+       { screenWidth > 1200 ? <div className="sidebarItem">
         <div className='cardTitle'>
                     MY GALLERY
                 </div>
@@ -46,7 +60,10 @@ export default function sidebar() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>:<div className="sidebarItem">
+        <div className='author' style={{ marginTop:"9%", marginBottom:0, paddingBottom:0}}><span className="sidebarTitle">
+                    MY GALLERY
+                </span></div><Example/></div>}
     </div>
   )
 }

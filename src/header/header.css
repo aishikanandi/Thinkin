@@ -36,7 +36,7 @@ nav.primary-navigation {
   display: block;
   text-align: center;
   font-size: 16px;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Verdana', sans-serif;
 
 }
 nav.primary-navigation ul li {
@@ -47,7 +47,7 @@ nav.primary-navigation ul li {
   position: relative;
   text-decoration: none;
   text-align: center;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Verdana', sans-serif;
 }
 nav.primary-navigation li  {
   color:black;

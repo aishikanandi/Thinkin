@@ -89,6 +89,7 @@
 
 @media only screen and (max-width: 580px) {
     
+    
     .shrink img{
         filter: grayscale(100%);
     }
@@ -102,9 +103,8 @@
         
     }
 .author{
-margin: 3%;
+margin: 3% 3% 0 3%;
 font-size: 80%;
-margin-bottom: 7%;
 }
     .cardTitle{
         font-size: 200%;
