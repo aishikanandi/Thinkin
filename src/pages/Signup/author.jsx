@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../header/header.jsx";
 import "./author.css";
 import dotenv from 'dotenv';
-import { Link } from "react-router-dom";
 dotenv.config();
 
 function Author({ updateIsAuthenticated }) {
@@ -70,8 +69,7 @@ function Author({ updateIsAuthenticated }) {
             {error && <p style={{ color: "red" }}>{error}</p>}
             <button onClick={handleSubmit}>Login</button>
             <p>
-              {/* <Link to="/signup">Don't have an account? Sign up</Link> */}
-            </p>
+                   </p>
           </form>
         </div>
       </div>

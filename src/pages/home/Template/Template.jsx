@@ -1,16 +1,18 @@
 import '../pages.css'
 import Header from '../../../header/header.jsx';
 import Post from '../../../post/post.jsx';
-import {useState} from 'react';
-import {BASE_URL} from '../single/helper.js'
 
 import React from 'react';
-function Marketing({posts, cate, isAuthenticated}) {
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setImagesLoaded(true);
-  };
+function Marketing({posts, cate, isAuthenticated, postsFetched}) {
+  
+  if(!postsFetched){
+    return <div>
+      <Header/>
+    <div className="noPosts">
+      <img class="gif" src={require('../../../images/75WF.gif')} alt="" />
+      <h5 className="textNoPage">Loading! Please Wait... </h5>
+    </div>
+  </div>} 
 
   if(!posts||!(posts.some(p => p.category[0] === cate))){
     return (
@@ -43,7 +45,6 @@ function Marketing({posts, cate, isAuthenticated}) {
                   title={p.title}
                   content={p.description}
                   id={p._id}
-                  onLoad={handleImageLoad}
                   isAuthenticated={isAuthenticated}
                 />
               </div>

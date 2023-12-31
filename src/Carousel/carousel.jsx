@@ -4,18 +4,18 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import {BASE_URL} from '../pages/home/single/helper.js'
 function splitCamelCase(input) {
-  if(input.length==1)return input[0].toUpperCase(); else if(input.length>1) {return input[0].toUpperCase() + input.replace(/([A-Z])/g, ' $1').trim().slice(1)};
+  if(input.length===1)return input[0].toUpperCase(); else if(input.length>1) {return input[0].toUpperCase() + input.replace(/([A-Z])/g, ' $1').trim().slice(1)};
 }
 
 export default function Carousel({ posts, cats, isAuthenticated }) {
   const [catCount, setCatCount] = useState({});
-  const [loading, setTimeOut] = useState(true);
   
+    
     posts = posts.slice(Math.max(posts.length - 5, 0));
     posts.reverse();
 
   useEffect(() => {
-    setTimeOut(()=>{
+    setTimeout(()=>{
     const requests = cats.map((cat) => {
       return axios.get(`${BASE_URL}/api/posts?cat=${cat.name}`);
     });
@@ -38,13 +38,7 @@ export default function Carousel({ posts, cats, isAuthenticated }) {
   }, [cats]);
   
 
-  if(loading){
-    return <div>
-    <div className="noPosts">
-      <img class="gif" src={require('../images/75WF.gif')} alt="" />
-    </div>
-  </div>
-  }
+  
   return (
     <div className='carousel1'>
       {posts.length!==0? <div className="onlyCarousel">

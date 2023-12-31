@@ -20,6 +20,7 @@ function App() {
   const [posts, setPosts] = useState([])
   const [cats, setCats] = useState([])
   const [catCount, setCatCount] = useState([]);
+  const [postsFetched, setPostsFetched] = useState(false);
    useEffect(()=>{
     const fetchPosts = async()=>{
       try{
@@ -27,7 +28,7 @@ function App() {
         setPosts(postsData.data); 
         const catsData = await axios.get(`${BASE_URL}/api/categories`);
         setCats(catsData.data); 
-        
+        setPostsFetched(true);
       } catch(err){
         console.log(err);
       }
@@ -60,17 +61,17 @@ function App() {
       <HashRouter>
       <Topbar isAuthenticated={isAuthenticated}/>
         <Routes>
-        <Route exact path='' element={ <Home posts={posts} cats={cats} isAuthenticated={isAuthenticated}/>}/>
+        <Route exact path='' element={ <Home posts={posts} cats={cats} isAuthenticated={isAuthenticated} postsFetched={postsFetched}/>}/>
           <Route exact path='about' element={ <About/>}/>
-          <Route exact path='marketing' element={<Template posts={posts} cate={"Marketing"} isAuthenticated={isAuthenticated}/>} />
-          <Route exact path='Human Resource' element={<Template posts={posts} cate={"Human Resource"} isAuthenticated={isAuthenticated}/>} />
-          <Route exact path='economy' element={<Template posts={posts} cate={"Economy"}isAuthenticated={isAuthenticated}/>} />
-          <Route exact path='leadership' element={<Template posts={posts} cate={"Leadership"}isAuthenticated={isAuthenticated}/>} />
-          <Route exact path='philosophy' element={<Template posts={posts} cate={"Philosophy"} isAuthenticated={isAuthenticated}/>} />
-          <Route exact path='technology' element={<Template posts={posts} cate={"Technology"}isAuthenticated={isAuthenticated}/>} />
-          <Route exact path='strategy' element={<Template posts={posts} cate={"Strategy"}/>}isAuthenticated={isAuthenticated} />
-          <Route exact path='operations' element={<Template posts={posts} cate={"Operations"}isAuthenticated={isAuthenticated}/>} />
-          <Route exact path='finance' element={<Template posts={posts} cate={"Finance"} isAuthenticated={isAuthenticated}/>} />
+          <Route exact path='marketing' element={<Template posts={posts} cate={"Marketing"} isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
+          <Route exact path='Human Resource' element={<Template posts={posts} cate={"Human Resource"} isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
+          <Route exact path='economy' element={<Template posts={posts} cate={"Economy"}isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
+          <Route exact path='leadership' element={<Template posts={posts} cate={"Leadership"} isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
+          <Route exact path='philosophy' element={<Template posts={posts} cate={"Philosophy"} isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
+          <Route exact path='technology' element={<Template posts={posts} cate={"Technology"}isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
+          <Route exact path='strategy' element={<Template posts={posts} cate={"Strategy"} isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
+          <Route exact path='operations' element={<Template posts={posts} cate={"Operations"} isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
+          <Route exact path='finance' element={<Template posts={posts} cate={"Finance"} isAuthenticated={isAuthenticated}  postsFetched={postsFetched}/>} />
           {posts.map((post, index) => {
             return <Route exact path={`/${post.title}`} element={<Single title={post.title} description ={post.description} date={post.date?post.date.slice(0,10):""} imageUrl={post.image} comments={post.comments} id={post._id} />} key={index}  />;
           })}

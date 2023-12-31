@@ -1,9 +1,13 @@
 import './post.css';
 import { Link } from 'react-router-dom';
-import React from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 import {BASE_URL} from '../pages/home/single/helper.js'
 function Post({ date, imageUrl, category, title, content, id, onDelete, isAuthenticated }) {
+  const [notification, setNotification] = useState(false);
+  const handleDeleteClick = async () => {
+    
+    notification?setNotification(false):setNotification(true);}
   const handleDelete = async () => {
     try {
       // Make a DELETE request to your API
@@ -11,6 +15,7 @@ function Post({ date, imageUrl, category, title, content, id, onDelete, isAuthen
       
       // Call the onDelete function passed as a prop
       onDelete(id);
+      
     } catch (error) {
       console.error("Error deleting post:", error.message);
       //refresh the webpage
@@ -51,8 +56,18 @@ function Post({ date, imageUrl, category, title, content, id, onDelete, isAuthen
             style={{ height: "20px", marginLeft: 'auto', cursor: "pointer" }}
             src={require("../images/bin.png")}
             alt=""
-            onClick={handleDelete}
+            onClick={handleDeleteClick}
           />}
+            {notification && (
+              <div className="popupNotification" style={{color: "Black"}}>
+                <p>Do you want to delete the post?</p>
+                <div style={{display: "flex", flexDirection:"row" }}>
+                <img style={{height: "40px", padding: "2%", cursor:  "pointer"}} src={require("../images/checked.png")} alt="" onClick={handleDelete} />
+                  <img style={{height: "40px ", padding: "2%", cursor:  "pointer"}} src={require("../images/no.png")} alt="" onClick={handleDeleteClick}/>
+
+                </div>
+              </div>
+            )}
         </div>
         </>
       

@@ -85,7 +85,7 @@ function Create({ isAuthenticated }) {
       formData.append("category", articleData.category);
         formData.append("image", cloudinaryResponse.data.secure_url);
 
-      const response = await axios.post(`${BASE_URL}/api/posts`, formData);
+      await axios.post(`${BASE_URL}/api/posts`, formData);
 
       
    setArticleData({
@@ -153,7 +153,7 @@ function Create({ isAuthenticated }) {
                           onChange={handleImageChange}
                         />
                       </div>
-                      <p style={{ color: "red" }}>Image uploaded successfully!</p>
+                      <p style={{ color: "green" }}>Image uploaded successfully!</p>
                     </div>
                   )}
                   {!imgSubmitted && (

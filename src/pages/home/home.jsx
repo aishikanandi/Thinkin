@@ -4,7 +4,16 @@ import Header from '../../header/header.jsx';
 import React from 'react';
 
 import './home.css';
-export default function Home({posts, cats, isAuthenticated}) {
+export default function Home({posts, cats, isAuthenticated, postsFetched}) {
+
+  if(!postsFetched){
+    return <div>
+      <Header/>
+    <div className="noPosts">
+      <img class="gif" src={require('../../images/75WF.gif')} alt="" />
+      <h5 className="textNoPage">Loading! Please Wait... </h5>
+    </div>
+  </div>}
   return (
     <>
     <Header/>
