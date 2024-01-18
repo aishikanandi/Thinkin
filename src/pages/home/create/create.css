@@ -1,6 +1,6 @@
 .createDiv{
    
-    padding: 6%;
+    padding: 2% 6% 6% 6%;
 }
 .writeFormGroup{
     text-align: center;
@@ -37,8 +37,7 @@
     margin: auto;
     width: 100%;
 }
-.writeRight textarea{
-    min-height: 50em;
+.writeRight {
     margin-top: 2em;
 }
 .writeInput{
@@ -47,6 +46,7 @@
     border-width: 0.2em !important;
     border-style: dashed !important;
     padding: 1.5em !important;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2);
 }
 .writeInput:click{
     border-color: rgba(184, 44, 16, 0.8);
@@ -55,11 +55,11 @@
 
 .writeSubmit{
     background-color: rgb(85, 79, 79, 0.6);
-    margin-top: 2em;
     padding: 0.7em 3em;
     border-radius: 1em;
     color: white;
     border-style: none;
+    margin-top: 10%;
 }
 .writeSubmit:hover{
     background-color: rgba(184, 44, 16, 0.8) ;
@@ -94,6 +94,7 @@ input[type="date"], #cat{
     justify-content: center;
       align-items: center;
       width: 100%;
+      margin-bottom: 4%;
   }
   .imageSelect{
     justify-content: center;
@@ -115,6 +116,7 @@ input[type="date"], #cat{
     width: 33.33%;
   }
   @media only screen and (max-width: 1200px) {
+
     .flexRow{
       flex-direction: column;
     }.mandate-date #cat{
@@ -125,4 +127,14 @@ input[type="date"], #cat{
       .mandate-date{
         width: 100%;
       }
+      .writeSubmit{
+        margin-top: 10%;
+        margin-bottom: 10%;
+      }
+  }
+
+  @media only screen and (max-width: 890px) {
+    .writeSubmit{
+      margin-top: 10rem;
+    }
   }
