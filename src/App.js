@@ -77,8 +77,8 @@ function App() {
           })}
           <Route exact path='author' element={<Author updateIsAuthenticated={updateIsAuthenticated}/>} />
           <Route exact path='reader' element={<Reader/>} />
-          {/* <Route path="create" element={isAuthenticated?<Create  isAuthenticated={isAuthenticated} />:<Author updateIsAuthenticated={updateIsAuthenticated}/>}/> */}
-          <Route path="create" element={<Create  isAuthenticated={isAuthenticated} />}/>
+          <Route path="create" element={isAuthenticated?<Create  isAuthenticated={isAuthenticated} />:<Author updateIsAuthenticated={updateIsAuthenticated}/>}/>
+          {/* <Route path="create" element={<Create  isAuthenticated={isAuthenticated} />}/> */}
         </Routes>
       
       </HashRouter>

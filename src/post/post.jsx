@@ -43,8 +43,8 @@ function Post({ date, imageUrl, category, title, content, id, onDelete, isAuthen
           </div>
         </Link>
         <Link to={`/${title}`}>
-          <div className="postDesc">
-            <span>{content}</span>
+          <div className="postDesc" >
+            <span dangerouslySetInnerHTML={{ __html: content }}></span>
           </div>
         </Link>
         </div>

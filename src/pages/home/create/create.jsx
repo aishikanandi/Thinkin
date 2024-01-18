@@ -146,17 +146,17 @@ function Create({ isAuthenticated }) {
       console.error('Error posting article:', error);
     }
 
-  //     if (!isAuthenticated) {
-  //   navigate('/author');
-  //   return null;
-  // }
+      if (!isAuthenticated) {
+    navigate('/author');
+    return null;
+  }
 
   };
 
 
   return (
     <>
-     {/* {isAuthenticated&&  */}
+     {isAuthenticated&& 
       <div className="createMain">
         <Header />
         <div className="createDiv">
@@ -289,7 +289,7 @@ function Create({ isAuthenticated }) {
           </form>
         </div>
       </div>
-         {/* }  */}
+         } 
     </>
   );
 }
