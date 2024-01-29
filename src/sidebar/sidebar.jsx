@@ -24,7 +24,7 @@ export default function Sidebar() {
                     AUTHOR
                 </span>
             <br />
-            <Link to="/author"><img className='photo' src={require("../images/AKN.jpeg")} alt="" /></Link>
+            <Link to="/author"><img className='photo' src={require("../images/AKN2.jpeg")} alt="" /></Link>
             <br />
             <span className="sidebarTitle name">
                     Ayush Kumar Nandi

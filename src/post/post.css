@@ -2,7 +2,7 @@
 .post{
     
     width: 330px;
-    min-height: 34em !important;
+    height: 34em !important;
     margin: 0% 1% 4% 2%;
     font-weight: bold; 
     border-style:groove;
@@ -26,15 +26,7 @@
    text-decoration: none;
    color: #fff;
  }
-.post:hover{
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-    }
-    
- 
+
 .postImage{
     width: 92%;
     height: 250px;
@@ -63,6 +55,11 @@
     margin-bottom: 2%;
     cursor: pointer;
     font-size: larger;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .postDesc{
     color:  black !important;
@@ -70,7 +67,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     
 }
