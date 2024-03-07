@@ -48,8 +48,7 @@ function Author({ updateIsAuthenticated }) {
       setError(`Too many login attempts. Please try again after 24 hours.`);
       return;
     }
-
-    if (username === process.env.REACT_APP_USERNAME && password === process.env.REACT_APP_PASSWORD) {
+    if (username === "ayushnandi" && password === "ilovesrk") {
       updateIsAuthenticated(true);
       history("/");
     } else {
