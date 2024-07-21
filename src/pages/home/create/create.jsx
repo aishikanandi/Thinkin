@@ -7,8 +7,10 @@ import { BASE_URL } from '../single/helper.js';
 import { api_key, cloud_name } from '../single/helper.js';
 import 'quill/dist/quill.snow.css'
 import ReactQuill from 'react-quill'
+import { useSelector } from 'react-redux';
 
-function Create({ isAuthenticated }) {
+function Create() {
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   var modules = {
     toolbar: [
       [{ size: ["small", false, "large", "huge"] }],

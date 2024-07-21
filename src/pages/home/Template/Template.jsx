@@ -3,7 +3,7 @@ import Header from '../../../header/header.jsx';
 import Post from '../../../post/post.jsx';
 
 import React from 'react';
-function Marketing({posts, cate, isAuthenticated, postsFetched}) {
+function Marketing({posts, cate, postsFetched}) {
   
   if(!postsFetched){
     return <div>
@@ -45,7 +45,6 @@ function Marketing({posts, cate, isAuthenticated, postsFetched}) {
                   title={p.title}
                   content={p.description}
                   id={p._id}
-                  isAuthenticated={isAuthenticated}
                 />
               </div>
             );

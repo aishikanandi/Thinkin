@@ -2,8 +2,10 @@ import './post.css';
 import { Link } from 'react-router-dom';
 import React, {useState} from 'react';
 import axios from 'axios';
+import { useSelector } from 'react-redux';
 import {BASE_URL} from '../pages/home/single/helper.js'
-function Post({ date, imageUrl, category, title, content, id, onDelete, isAuthenticated }) {
+function Post({ date, imageUrl, category, title, content, id, onDelete}) {
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const [notification, setNotification] = useState(false);
   const handleDeleteClick = async () => {
     
@@ -61,7 +63,7 @@ function Post({ date, imageUrl, category, title, content, id, onDelete, isAuthen
             {notification && (
               <div className="popupNotification" style={{color: "Black"}}>
                 <p>Do you want to delete the post?</p>
-                <div style={{display: "flex", flexDirection:"row" }}>
+                <div style={{display: "flex", flexDirection:"row", justifyContent:"center", alignItems:"center" }}>
                 <img style={{height: "40px", padding: "2%", cursor:  "pointer"}} src={require("../images/checked.png")} alt="" onClick={handleDelete} />
                   <img style={{height: "40px ", padding: "2%", cursor:  "pointer"}} src={require("../images/no.png")} alt="" onClick={handleDeleteClick}/>
 

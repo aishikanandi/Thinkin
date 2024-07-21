@@ -4,7 +4,7 @@ import Header from '../../header/header.jsx';
 import React from 'react';
 
 import './home.css';
-export default function Home({posts, cats, isAuthenticated, postsFetched}) {
+export default function Home({posts, cats, postsFetched}) {
 
   if(!postsFetched){
     return <div>
@@ -20,7 +20,7 @@ export default function Home({posts, cats, isAuthenticated, postsFetched}) {
     <div className='cont'>
       
       <div className='left'>
-        <Carousel posts={posts} cats={cats} className='box2' isAuthenticated={isAuthenticated}/>
+        <Carousel posts={posts} cats={cats} className='box2'/>
 
       </div>
 

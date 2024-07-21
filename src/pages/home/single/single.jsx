@@ -14,8 +14,8 @@ function Single({title, description, date, imageUrl, comments, id}) {
         <img className='postIm' src={imageUrl} alt="" />
         <h1 className="Title">{title}</h1>
         <div className="postDetails">
-        <h5 className="postAuthor">Author : Ayush Kumar Nandi </h5>
-        <h5 className="postTime">{date} </h5>
+        <h3 className="postAuthor">Author : Ayush Kumar Nandi </h3>
+        <h4 className="postTime">{date} </h4>
         </div>
         <p className='postContent' dangerouslySetInnerHTML={{ __html: formattedDescription }}></p>
     </div>

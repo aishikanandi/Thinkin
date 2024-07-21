@@ -1,5 +1,6 @@
 import './carousel.css'
 import {Link} from "react-router-dom"
+import { useSelector } from 'react-redux';
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import {BASE_URL} from '../pages/home/single/helper.js'
@@ -7,7 +8,8 @@ function splitCamelCase(input) {
   if(input.length===1)return input[0].toUpperCase(); else if(input.length>1) {return input[0].toUpperCase() + input.replace(/([A-Z])/g, ' $1').trim().slice(1)};
 }
 
-export default function Carousel({ posts, cats, isAuthenticated }) {
+export default function Carousel({ posts, cats}) {
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const [catCount, setCatCount] = useState({});
   
     
